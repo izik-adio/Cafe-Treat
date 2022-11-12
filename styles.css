@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box;
+}
 body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     /* background-image: url(https://static.vecteezy.com/system/resources/previews/003/607/477/non_2x/coffee-background-with-realistic-cup-of-coffee-vector.jpg); */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     padding: 20px;
   }
 
@@ -22,7 +25,7 @@ ul {
   padding: 0;
   justify-content: center;
 }
-a{
+a {
   display: block;
   padding: 15px;
   margin: 0;
@@ -47,25 +50,46 @@ h1, h2, p {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  max-width: 500px;
+  max-width: 600px;
+}
+.plus {
+  max-width: 80%;
+}
+.news {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+label, input {
+  text-align: left;
 }
 
 img {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 hr {
   height: 2px;
   background-color: brown;
   border-color: brown;
+  border-style: initial;
+  border-radius: 200%;
 }
 
 .bottom-line {
   margin-top: 25px;
 }
-
+#foot {
+  margin: 5px 0px -10px 0;
+}
 h1, h2 {
   font-family: 'Noto Serif', serif;
 }
@@ -86,15 +110,23 @@ h1, h2 {
   text-align: right;
   width: 25%;
 }
-
+fieldset {
+  border-radius: 10px;
+  border: 1px solid brown;
+}
+input {
+  margin: 5px;
+  border-radius: 5px;
+}
 /* FOOTER */
 
 footer {
   font-size: 14px;
 }
 
-.address {
+#location {
   margin-bottom: 5px;
+  text-align: center;
 }
 
 a {
@@ -111,4 +143,14 @@ a:hover {
 
 a:active {
   color: brown;
+}
+figcaption {
+  margin-left: -40px;
+}
+select {
+  margin-top: -15px;
+  margin-left: 120px;
+}
+figure {
+  display: grid;
 }

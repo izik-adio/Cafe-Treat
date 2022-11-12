@@ -1,101 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAFE</title>
-  <link rel="stylesheet" href="main.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-  <h1><em> Cafe <span class="treat"> Treat </span></em></h1>
-  <img src="./image/cafe-ge4149f1ba_1920.jpg" alt="Cafe Treat" width="100%" height="70%" title="Cafe Treat">
-  <nav>
-    <ul>
-      <li><a href="#About-us">About</a></li>
-      <li><a href="./menu.html">Menu</a></li>
-      <li><a href="./review.html">Review our service</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  </header>
-  <main>
-<article>
-  <h2 id="About-us" > About </h2>
- <p>Everything began in <em>2002</em> when the proprietor opened his first espresso,doughnut and sandwich shop. It was gigantically fruitful and this drove him to begin another shop called <strong>Cafe Treat</strong>. He opened the principal store in 2006 in Oregon in the USA. </p> 
- <!-- image -->
- <img src="./image/coffeeshop.jpg" alt="coffee shop" width="100%" draggable="true" >
- <p>At <strong>Cafe Treat</strong> , we’re tied in with presenting crisp food, regardless of whether it implies going the additional mile. When you stroll through our entryways, we do what we can to make everybody feel comfortable in light of the fact that our family stretches out through your locale.</p>
- <p>
-  <strong>Cafe Treat</strong> is an organization that is continually developing. From the principal eatery in 2002, we’ve kept on extending’ vision to help other individuals end up effective entrepreneurs by owning an <strong>Cafe Treat</strong> establishment. We search for franchisees who are focused on quality, not compromising.
- </p>
- <p>
-  Today, we can be found in numerous nations and have our sights on extending much more. Be that as it may, regardless of where you discover us, quality will dependably be our formula.
- </p>
- <p>
-We Believe in Quality. All around. Quality food can’t be made without quality initiative. Find out about the general
-population driving The ‘<strong>Cafe Treat</strong>’.
- </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAFE</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu plus">
+      <header>
+        <h1>
+          <em> Cafe <span class="treat"> Treat </span></em>
+        </h1>
+        <img
+          src="./images/cafe-ge4149f1ba_1920.jpg"
+          alt="Cafe Treat"
+          width="100%"
+          title="Cafe Treat"
+          style="margin: 0px 0px 10px 0px"
+        />
+        <nav>
+          <ul>
+            <li><a href="#About-us">About</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./review.html">Review our service</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <article>
+          <h2 id="About-us">About</h2>
+          <p>
+            Everything began in <em>2002</em> when the proprietor opened his
+            first espresso,doughnut and sandwich shop. It was gigantically
+            fruitful and this drove him to begin another shop called
+            <strong>Cafe Treat</strong>. He opened the principal store in 2006
+            in Oregon in the USA.
+          </p>
+          <!-- image -->
+          <img
+            src="./images/coffee shop.jpg"
+            alt="coffee shop"
+            width="100%"
+            draggable="true"
+          />
+          <p>
+            At <strong>Cafe Treat</strong> , we’re tied in with presenting crisp
+            food, regardless of whether it implies going the additional mile.
+            When you stroll through our entryways, we do what we can to make
+            everybody feel comfortable in light of the fact that our family
+            stretches out through your locale.
+          </p>
+          <p>
+            <strong>Cafe Treat</strong> is an organization that is continually
+            developing. From the principal eatery in 2002, we’ve kept on
+            extending’ vision to help other individuals end up effective
+            entrepreneurs by owning an
+            <strong>Cafe Treat</strong> establishment. We search for franchisees
+            who are focused on quality, not compromising.
+          </p>
+          <p>
+            Today, we can be found in numerous nations and have our sights on
+            extending much more. Be that as it may, regardless of where you
+            discover us, quality will dependably be our formula.
+          </p>
+          <p>
+            We Believe in Quality. All around. Quality food can’t be made
+            without quality initiative. Find out about the general population
+            driving The ‘<strong>Cafe Treat</strong>’.
+          </p>
+        </article>
+        <hr />
+        <form class="news" action="./success.html" method="get">
+          <fieldset>
+            <legend>
+              <strong> Subscribe to our newsletter</strong>
+            </legend>
+            <div>
+              <label for="name">Full-Name</label>
+              <input
+                type="text"
+                id="email"
+                required
+                placeholder="Your first &amp Last name"
+                autocomplete="on"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="email@example.com"
+                autocomplete="on"
+              />
+            </div>
+            <div>
+              <label for="date">Date:</label>
+              <input type="date" name="date" id="date" required />
+            </div>
+            <div>
+              <figure class="select">
+                <figcaption for="favorite">Favorite Snack&nbsp;&amp;&nbsp;Drink:</figcaption>
+                <select name="favorite" id="favorite" required multiple>
+                  <optgroup label="Drinks">
+                    <option value="coffee" selected>Coffee</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Juice">Juice</option>
+                    <option value="Smoothes">Smoothes</option>
+                    <option value="Milk">Milk</option>
+                    <option value="Hot Chocolate">Hot Chocolate</option>
+                    <option value="Wine">Wine</option>
+                    <option value="Soft Drinks">Soft Drinks</option>
+                    <option value="Beer">Beer</option>
+                    <option value="Liquor">liquor</option>
+                  </optgroup>
+                  <optgroup label="Snack">
+                    <option value="Cookies">Cookeis</option>
+                    <option value="Chips Crips">Chips &amp; Crips</option>
+                    <option value="Chocolate Bars">Chocolate Bars</option>
+                    <option value="Nuts">Nuts</option>
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Sweets">Sweets</option>
+                    <option value="Fruits(dried)">Fruits(dried)</option>
+                    <option value="Pizza">Pizza</option>
+                  </optgroup>
+                </select>
+              </figure>
+              
+            </div>
+            <input type="submit" value="Subscribe">
+            <input type="reset">
+          </fieldset>
+        </form>
+      </main>
 
-</article>
-<hr>
-<br>
-<form action="/" method="get">
-  <fieldset>
-    <legend>
-      <strong> Subscribe to our newsletter</strong>
-    </legend>
-  <p>
-  <label for="name" >Full-Name</label>
-  <input type="text" id="email" required placeholder="Your first &amp Last name" autocomplete="on" >
-  </p>
-  <p>
-  <label for="email">Email</label>
-  <input type="email" name="email" id="email" required placeholder="email@example.com"  autocomplete="on">
-  </p>
-  <p>
-  <label for="date">Date</label>
-  <input type="date" name="date" id="date" required>
-  </p>
-  <p>
-  <label for="favorite">Favorite Snack&nbsp;&amp;&nbsp;Drink</label>
-  <select name="favorite" id="favorite" required multiple >
-    <optgroup label="Drinks">
-      <option value="coffee" selected>Coffee</option>
-      <option value="Tea">Tea</option>
-      <option value="Juice">Juice</option>
-      <option value="Smoothes">Smoothes</option>
-      <option value="Milk">Milk</option>
-      <option value="Hot Chocolate">Hot Chocolate</option>
-      <option value="Wine">Wine</option>
-      <option value="Soft Drinks">Soft Drinks</option>
-      <option value="Beer">Beer</option>
-      <option value="Liquor">liquor</option>
-    </optgroup>
-    <optgroup label="Snack">
-      <option value="Cookies">Cookeis</option>
-      <option value="Chips &amp; Crips">Chips &amp; Crips</option>
-      <option value="Chocolate Bars">Chocolate Bars</option>
-      <option value="Nuts">Nuts</option>
-      <option value="Ice Cream">Ice Cream</option>
-      <option value="Sweets">Sweets</option>
-      <option value="Fruits(dried)">Fruits(dried)</option>
-      <option value="Pizza">Pizza</option>
-    </optgroup>
-  </select>
-  </p>
-  <button type="submit"><strong><em>Subscribe</em></strong></button>
-  </fieldset>
-</form>
-</main>
-  
-<footer>
-  <p><a href="#">Back to top</a></p>
-</footer>
-
-</body>
+      <hr id="foot" />
+      <footer>
+        <p><a href="#">Back to top</a></p>
+      </footer>
+    </div>
+  </body>
 </html>
