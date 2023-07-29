@@ -1,18 +1,17 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    /* background-image: url(https://static.vecteezy.com/system/resources/previews/003/607/477/non_2x/coffee-background-with-realistic-cup-of-coffee-vector.jpg); */
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-    padding: 20px;
-  }
+}
 
 h1 {
   font-size: 40px;
-  margin-top: 0;
   margin-bottom: 10px;
 }
-h1::first-letter{
+h1::first-letter {
   font-size: 60px;
 }
 
@@ -21,7 +20,7 @@ ul {
   background-color: brown;
   display: flex;
   list-style-type: none;
-  margin: 0 0 10px 0 ;
+  margin: 0 0 10px 0;
   padding: 0;
   justify-content: center;
 }
@@ -40,15 +39,15 @@ h2 {
   font-style: italic;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   text-align: center;
 }
 
 .menu {
   width: 80%;
   background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px;
   max-width: 600px;
 }
@@ -60,7 +59,8 @@ h1, h2, p {
   display: flex;
   justify-content: center;
 }
-label, input {
+label,
+input {
   text-align: left;
 }
 
@@ -90,8 +90,9 @@ hr {
 #foot {
   margin: 5px 0px -10px 0;
 }
-h1, h2 {
-  font-family: 'Noto Serif', serif;
+h1,
+h2 {
+  font-family: "Noto Serif", serif;
 }
 
 .item p {
@@ -101,7 +102,8 @@ h1, h2 {
   font-size: 18px;
 }
 
-.flavor, .dessert {
+.flavor,
+.dessert {
   text-align: left;
   width: 75%;
 }
