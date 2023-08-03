@@ -326,7 +326,7 @@ a:visited {
   background-color: #77595b00;
 }
 #menu__more a {
-  color: var(--light-brown);
+  color: var(--bg-color);
   text-decoration: none;
 }
 
