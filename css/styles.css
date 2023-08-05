@@ -1,3 +1,5 @@
+/* Font Faces */
+
 @font-face {
   font-family: Actor;
   src: url(../fonts/Actor/Actor-Regular.ttf);
@@ -7,13 +9,17 @@
   src: url(../fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf);
 }
 
+/* Global Styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  max-width: 100vw;
 }
 
 :root {
+  /* Color Variables */
   --deep-brown: #1f1b29;
   --light-brown: #77595b;
   --bg-color: #e6e6eb;
@@ -24,10 +30,9 @@ html {
 }
 
 body {
+  /* Body Style */
   background: var(--bg-color);
   color: var(--deep-brown);
-  max-width: 100vw;
-  overflow-x: hidden;
   font-family: Actor;
 }
 
@@ -36,27 +41,31 @@ h2,
 h3,
 h4,
 ul {
+  /* Headings and Unordered List Styles */
   font-family: "Playfair Display";
   text-transform: capitalize;
   text-rendering: optimizeLegibility;
 }
 
-/* HEADER START */
+/* HEADER Section */
 
 #hero {
+  /* Hero Section Style  */
   position: relative;
   height: 100vh;
-  width: 100%;
+  margin-left: 2vw;
   background: #ffffff
     url(../images/coffee-mug-coffee-beans-white-background.jpg) no-repeat;
   background-size: cover;
 }
 
 #top {
-  position: absolute;
-  left: 2%;
+  /* Top Section Styles */
+  /* position: absolute; */
+  /* left: 2%; */
+  margin-inline: 3%;
   display: flex;
-  width: 96%;
+  width: 94%;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -76,6 +85,7 @@ ul {
 }
 
 h1 {
+  /* Main Heading Style */
   width: fit-content;
   height: fit-content;
   font-size: max(6vw, 3rem);
@@ -86,15 +96,18 @@ h1 {
 h1:hover,
 h1:active,
 h1:focus {
+  /* Main Heading Hover Style */
   opacity: 1;
   color: var(--light-brown);
 }
 
 h1::first-letter {
+  /* Styling for the first letter of main heading */
   font-size: max(8vw, 4.3rem);
 }
 
 ul {
+  /* Unordered List Styles */
   display: flex;
   list-style-type: none;
   justify-content: center;
@@ -103,6 +116,7 @@ ul {
 
 .home-nav a,
 #hero__cta a {
+  /* Link Styles */
   color: var(--deep-brown);
   opacity: 0.9;
   font-size: max(2.3vw, 1.5rem);
@@ -110,7 +124,8 @@ ul {
 }
 
 #more {
-  color: var(--deep-brown)  !important;
+  /* "More" Link Styles */
+  color: var(--deep-brown) !important;
   padding-top: 3vh;
   float: right;
   width: fit-content;
@@ -119,12 +134,14 @@ ul {
 }
 
 a {
+  /* Generic Link Styles */
   color: var(--deep-brown);
   display: block;
   font-weight: 900;
 }
 
 .home-nav a:hover {
+  /* Hover Styles for Links in Navigation */
   opacity: 1;
   text-decoration: none;
   color: var(--light-brown);
@@ -132,29 +149,33 @@ a {
   border-radius: 5px;
 }
 
-a:visited {
+.home-nav a:visited {
+  /* Visited Link Styles */
   color: #77595b;
 }
 
 #header__p {
+  /* Header Paragraph Styles */
   position: absolute;
   right: 3vw;
   top: 25vh;
   text-align: right;
   font-weight: 500;
-  z-index: +10;
 }
 
 #tagline {
+  /* Tagline Styles */
   font-size: max(3vw, 1.5rem);
   margin-bottom: 1vw;
 }
 
 #cta {
+  /* Call to Action Styles */
   font-size: max(2.5vw, 1.2rem);
 }
 
 @keyframes cta {
+  /* Animation Keyframes for Call to Action */
   0% {
     transform: translateY(-10px);
   }
@@ -169,6 +190,7 @@ a:visited {
 }
 
 #hero__cta a {
+  /* Call to Action Link Styles in Hero Section */
   position: absolute;
   font-size: (4vw, 2rem);
   bottom: 3vh;
@@ -179,12 +201,14 @@ a:visited {
 
 #hero__cta a:hover,
 #hero__cta a:active {
+  /* Hover Styles for Call to Action Link in Hero Section */
   color: var(--light-brown);
   opacity: 1;
 }
 
-/* About */
+/* About Section */
 #About-us {
+  /* About Section Style */
   margin-inline: auto;
   height: fit-content;
   width: 90%;
@@ -196,12 +220,14 @@ a:visited {
 }
 
 #About-us img {
+  /* About Section Image Styles */
   height: auto;
   width: max(48%, 300px);
   margin-block: 5vw;
 }
 
 #About-us div {
+  /* About Section Content Styles */
   max-height: 80vh;
   width: max(48%, 300px);
   display: flex;
@@ -212,6 +238,7 @@ a:visited {
 }
 
 #about__h3 {
+  /* Heading Styles in About Section */
   width: 100%;
   font-size: max(1.5rem, 2vw);
   text-align: left;
@@ -219,16 +246,19 @@ a:visited {
 }
 
 #about__span {
+  /* Span Styles in About Section */
   display: block;
 }
 
 .about__p {
+  /* Paragraph Styles in About Section */
   font-size: max(1.2vw, 0.8rem);
   font-weight: 400;
   text-align: justify;
 }
 
 #about__more {
+  /* "Read More" Link Styles in About Section */
   display: flex;
   flex-flow: row nowrap;
   align-self: flex-start;
@@ -244,10 +274,12 @@ a:visited {
   background-color: #77595b00;
 }
 #about__more a {
+  /* "Read More" Link in About Section */
   text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {
+  /* Responsive Styles for About Section */
   #About-us img,
   #About-us div {
     width: 100%;
@@ -267,15 +299,18 @@ a:visited {
 }
 
 .arrow {
+  /* Arrow Styles */
   font-size: 1rem;
   color: var(--deep-brown);
 }
 
 #about__more:hover {
+  /* Hover Styles for "Read More" Link in About Section */
   animation: hover-button 0.5s ease-out forwards;
 }
 
 @keyframes hover-button {
+  /* Keyframes for Hover Effect on "Read More" Link */
   100% {
     background-color: var(--light-brown);
     color: var(--bg-color);
@@ -283,8 +318,9 @@ a:visited {
   }
 }
 
-/* Menu */
+/* Menu Section*/
 #menu {
+  /* Menu Section Style */
   background-color: var(--deep-brown);
   color: var(--bg-color);
   display: grid;
@@ -296,6 +332,7 @@ a:visited {
 }
 
 #menu__first--div {
+  /* First Section of the Menu Styles */
   height: 100%;
   width: 90%;
   display: flex;
@@ -306,6 +343,7 @@ a:visited {
 }
 
 #menu__h3 {
+  /* Heading Styles in Menu */
   font-size: max(2.5vw, 1.4rem);
   white-space: nowrap;
   margin-bottom: 1vw;
@@ -313,6 +351,7 @@ a:visited {
 }
 
 #menu__more {
+  /* "More" Button Styles in Menu  */
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -326,15 +365,18 @@ a:visited {
   background-color: #77595b00;
 }
 #menu__more a {
+  /* "More" Link Styles in Menu */
   color: var(--bg-color);
   text-decoration: none;
 }
 
 #menu__more span {
+  /* Span Styles in "More" Button */
   color: var(--bg-color);
 }
 
 #menu__p {
+  /* Paragraph Styles in Menu */
   text-align: left;
   text-indent: 0;
   font-size: max(1.2vw, 0.8rem);
@@ -342,6 +384,7 @@ a:visited {
 }
 
 #menu__second--div {
+  /* Second Section of Menu Styles */
   height: 100%;
   display: grid;
   margin-inline: 2vw;
@@ -351,6 +394,7 @@ a:visited {
 
 .head,
 .item {
+  /* Header and Item Styles in Menu */
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -359,17 +403,20 @@ a:visited {
 
 .head,
 .item__price {
+  /* Price Styles in Header and Item */
   font-size: max(0.8vw, 0.8rem);
   font-family: "Playfair Display";
   text-transform: uppercase;
 }
 
 .item {
+  /* Item Styles in Menu */
   position: relative;
   border-bottom: 1px solid var(--bg-color);
 }
 
 .item__name {
+  /* Item Name Styles */
   font-size: max(2vw, 1.3rem);
   opacity: 1;
   text-transform: capitalize;
@@ -378,19 +425,12 @@ a:visited {
 
 .item__detail:hover,
 #menu__more:hover {
+  /* Hover Styles for Item Details and "More" Button in Menu */
   opacity: 0.7;
 }
 
-#item-image-1,
-#item-image-2,
-#item-image-3,
-#item-image-4,
-#item-image-5,
-#item-image-6,
-#item-image-7,
-#item-image-8,
-#item-image-9,
-#item-image-10 {
+.item-image {
+  /* Common styles for item images */
   display: none;
   position: absolute;
   top: -30px;
@@ -402,6 +442,7 @@ a:visited {
 }
 
 .item-button {
+  /* Common styles for item button */
   position: relative;
   top: 98px;
   left: 98px;
@@ -412,148 +453,125 @@ a:visited {
   background-color: transparent;
 }
 
+/* Define hover behavior for items 1 to 10 */
+#item-1:hover #item-image-1,
+#item-1:hover #item-button-1,
+#item-2:hover #item-image-2,
+#item-2:hover #item-button-2,
+#item-3:hover #item-image-3,
+#item-3:hover #item-button-3,
+#item-4:hover #item-image-4,
+#item-4:hover #item-button-4,
+#item-5:hover #item-image-5,
+#item-5:hover #item-button-5,
+#item-6:hover #item-image-6,
+#item-6:hover #item-button-6,
+#item-7:hover #item-image-7,
+#item-7:hover #item-button-7,
+#item-8:hover #item-image-8,
+#item-8:hover #item-button-8,
+#item-9:hover #item-image-9,
+#item-9:hover #item-button-9,
+#item-10:hover #item-image-10,
+#item-10:hover #item-button-10 {
+  display: block;
+  opacity: 1;
+  background-size: contain;
+}
+
 #item-1:hover {
   #item-image-1 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/drinks-images/Espresso.png);
-    background-size: contain;
   }
 
   #item-button-1 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-2:hover {
   #item-image-2 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/drinks-images/Americano.png);
-    background-size: contain;
   }
 
   #item-button-2 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-3:hover {
   #item-image-3 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/drinks-images/Iced-Coffee.png);
-    background-size: contain;
   }
 
   #item-button-3 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-4:hover {
   #item-image-4 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/drinks-images/Cappuccino.png);
-    background-size: contain;
   }
 
   #item-button-4 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-5:hover {
   #item-image-5 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/drinks-images/Flat-White.png);
-    background-size: contain;
   }
 
   #item-button-5 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-6:hover {
   #item-image-6 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/pastries-images/Croissant.png);
-    background-size: contain;
   }
 
   #item-button-6 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-7:hover {
   #item-image-7 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/pastries-images/Danish-pastry.png);
-    background-size: contain;
   }
 
   #item-button-7 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-8:hover {
   #item-image-8 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/pastries-images/Almond-Croissant.png);
-    background-size: contain;
   }
 
   #item-button-8 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-9:hover {
   #item-image-9 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/pastries-images/Apple-Turnover.png);
-    background-size: contain;
   }
 
   #item-button-9 {
-    opacity: 1;
-    display: block;
   }
 }
 
 #item-10:hover {
   #item-image-10 {
-    display: block;
-    opacity: 1;
     background-image: url(../images/pastries-images/Scone.png);
-    background-size: contain;
   }
 
   #item-button-10 {
-    opacity: 1;
-    display: block;
   }
 }
 
-/* Reviews */
+/* Reviews Section*/
 #review {
+  /* Review Section Styles */
   position: relative;
   min-height: 64vh;
   display: flex;
@@ -563,6 +581,7 @@ a:visited {
 }
 
 .reviews {
+  /* Individual Review Styles */
   display: flex;
   margin: 4vh 1vw;
   flex-flow: column nowrap;
@@ -584,10 +603,12 @@ a:visited {
 }
 
 q {
+  /* Quotes Styles in Reviews */
   text-align: justify;
 }
 
 .reviews img {
+  /* Review Image Styles */
   position: relative;
   height: 80px;
   width: 80px;
@@ -596,13 +617,15 @@ q {
 }
 
 .names {
+  /* Name Styles in Reviews */
   position: absolute;
   bottom: 7%;
   right: 5%;
 }
 
-/* Foooter */
+/* Foooter Section*/
 #contact {
+  /* Footer Section Style */
   min-height: 65vh;
   width: 100vw;
   margin-top: 5vh;
@@ -614,12 +637,14 @@ q {
   justify-content: space-between;
 }
 #contact hr {
+  /* Horizontal Line Styles in Footer */
   background-color: var(--light-brown);
   color: #77595b;
   margin-block: 2%;
 }
 
 #footer__main {
+  /* Main Footer Style */
   min-height: 100%;
   width: 90%;
   display: flex;
@@ -629,6 +654,7 @@ q {
 }
 
 #footer__first-section {
+  /* Footer First Section Style */
   height: 60vh;
   width: 30vw;
   padding: 3vh 1%;
@@ -639,10 +665,12 @@ q {
   justify-content: space-between;
 }
 #footer__h2 {
+  /* Heading 2 Style in Footer */
   font-size: max(3vw, 1.5rem);
   white-space: nowrap;
 }
 #footer__contact {
+  /* Contact In Footer  */
   min-height: 50%;
   display: flex;
   gap: 10%;
@@ -653,6 +681,7 @@ q {
 }
 
 #footer__second-section {
+  /* Second Section Style In Footer */
   height: 100%;
   max-width: 30vw;
   display: flex;
@@ -662,6 +691,7 @@ q {
   justify-content: space-between;
 }
 #footer__second-section h3 {
+  /* Footer Second Section H3 Style */
   margin-top: 3vw;
   width: 100%;
   text-align: left;
@@ -672,6 +702,7 @@ q {
   text-align: center;
 }
 form {
+  /* Contact Form Styles in Footer */
   display: flex;
   width: 100%;
   flex-flow: column nowrap;
@@ -740,4 +771,80 @@ textarea {
 .footer__nav a:hover {
   border: 1px solid var(--light-brown);
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Responsive Styles */
+  #hero {
+    background-position: center center;
+    height: 95vh;
+  }
+  h1 {
+    font-size: max(5vw, 3rem);
+  }
+  #tagline {
+    font-size: max(3vw, 1.2rem);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* Responsive Styles */
+  #hero {
+    height: 85vh;
+  }
+  h1 {
+    font-size: max(7vw, 3rem);
+  }
+  #tagline {
+    font-size: max(3vw, 1rem);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Responsive Styles */
+  #hero {
+    height: 75vh;
+  }
+  h1 {
+    font-size: max(10vw, 3rem);
+  }
+  #tagline {
+    font-size: max(3vw, 1rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Responsive Styles */
+  #hero {
+    height: 65vh;
+  }
+  h1 {
+    font-size: max(12vw, 3rem);
+  }
+  #tagline {
+    font-size: max(4vw, 1rem);
+  }
+  .home-nav a,
+  #hero__cta a,
+  .about__p {
+    font-size: max(3.5vw, 1rem);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Responsive Styles */
+  #hero {
+    height: 60vh;
+  }
+  h1 {
+    font-size: max(15vw, 3rem);
+  }
+  #tagline {
+    font-size: max(5vw, 1rem);
+  }
+  .home-nav a,
+  #hero__cta a,
+  .about__p {
+    font-size: max(4vw, 1rem);
+  }
 }
