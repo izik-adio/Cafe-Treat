@@ -328,7 +328,6 @@ a {
   grid-template-rows: auto;
   height: 60vh;
   padding: 2vw 3vw 2vw 1vw;
-  margin: 0 auto 5vh;
 }
 
 #menu__first--div {
@@ -587,13 +586,15 @@ a {
   flex-flow: column nowrap;
   text-align: left;
   align-items: center;
+  justify-content: flex-start;
+  gap: min(1vw, 1vh);
   position: relative;
   width: max(22vw, 300px);
-  height: 50vh;
-  font-size: max(1.1rem, 1.1vw);
+  height: max(20rem, 25vw);
+  font-size: max(1rem, 1.2vw);
   font-weight: 700;
   color: var(--light-brown);
-  padding: 14px;
+  padding: 1.5vw;
   border-radius: 5px;
   box-shadow: 7px 5px 20px var(--deep-brown);
 }
@@ -627,7 +628,6 @@ q {
 #contact {
   /* Footer Section Style */
   min-height: 65vh;
-  width: 100vw;
   margin-top: 5vh;
   background-color: var(--deep-brown);
   color: var(--light-brown);
@@ -733,13 +733,12 @@ textarea {
   justify-content: space-between;
 }
 .footer__button {
-  color: #77595b;
+  color: #c99193;
   background: linear-gradient(-45deg, var(--light-brown), var(--deep-brown));
   padding: max(0.5vw, 10px);
   border-radius: 10px;
   border: none;
-  width: 20%;
-}
+ }
 #buttons {
   width: 100%;
   display: flex;
