@@ -41,10 +41,6 @@ This project was built using:
 - HTML5
 - CSS3
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Under Development
 
 Please note that Cafe Treat is currently under active development. New features, improvements, and content updates are being regularly added. We appreciate your patience as we work to make Cafe Treat even better!
