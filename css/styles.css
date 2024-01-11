@@ -61,8 +61,6 @@ ul {
 
 #top {
   /* Top Section Styles */
-  /* position: absolute; */
-  /* left: 2%; */
   margin-inline: 3%;
   display: flex;
   width: 94%;
@@ -86,8 +84,8 @@ ul {
 
 h1 {
   /* Main Heading Style */
-  width: fit-content;
-  height: fit-content;
+  /* width: fit-content;
+  height: fit-content; */
   font-size: max(6vw, 3rem);
   opacity: 0.9;
   white-space: nowrap;
@@ -111,12 +109,13 @@ ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
-  gap: 2vw;
+  gap: 1vw;
 }
 
 .home-nav a,
 #hero__cta a {
   /* Link Styles */
+  padding: 0.5rem;
   color: var(--deep-brown);
   opacity: 0.9;
   font-size: max(2.3vw, 1.5rem);
@@ -125,12 +124,13 @@ ul {
 
 #more {
   /* "More" Link Styles */
-  color: var(--deep-brown) !important;
-  padding-top: 3vh;
+  margin-top: max(3vh, 2rem);
   float: right;
   width: fit-content;
+  height: fit-content;
+  padding: 0.5rem;
   font-weight: 600;
-  font-size: max(2vw, 1rem);
+  font-size: max(2vw, 1.2rem);
 }
 
 a {
@@ -140,7 +140,10 @@ a {
   font-weight: 900;
 }
 
-.home-nav a:hover {
+.home-nav a:hover,
+.home-nav a:focus,
+#more:hover,
+#more:focus {
   /* Hover Styles for Links in Navigation */
   opacity: 1;
   text-decoration: none;
@@ -149,16 +152,18 @@ a {
   border-radius: 5px;
 }
 
-.home-nav a:visited {
+.home-nav a:visited,
+.home-nav a:active,
+#more:visited,
+#more:active {
   /* Visited Link Styles */
   color: #77595b;
 }
 
 #header__p {
   /* Header Paragraph Styles */
-  position: absolute;
+  position: relative;
   right: 3vw;
-  top: 25vh;
   text-align: right;
   font-weight: 500;
 }
@@ -189,12 +194,13 @@ a {
   }
 }
 
-#hero__cta a {
+#hero__cta {
   /* Call to Action Link Styles in Hero Section */
   position: absolute;
-  font-size: (4vw, 2rem);
-  bottom: 3vh;
-  right: 5vw;
+  font-size: max(3vw, 2rem);
+  bottom: 1rem;
+  width: fit-content;
+  right: 3vw;
   text-decoration-line: none;
   animation: cta 1.5s ease-in-out infinite forwards;
 }
@@ -597,10 +603,12 @@ a {
   padding: 1.5vw;
   border-radius: 5px;
   box-shadow: 7px 5px 20px var(--deep-brown);
+  transition: transform 1s;
 }
 
 .reviews:hover {
-  transform: translateY(-1vh);
+  box-shadow: 0 0 1rem var(--deep-brown);
+  transform: scale(1.05);
 }
 
 q {
@@ -715,6 +723,7 @@ label {
 }
 input,
 textarea {
+  resize: none;
   width: 70%;
   color: var(--bg-color);
   background: linear-gradient(-45deg, var(--light-brown), var(--deep-brown));
@@ -738,7 +747,7 @@ textarea {
   padding: max(0.5vw, 10px);
   border-radius: 10px;
   border: none;
- }
+}
 #buttons {
   width: 100%;
   display: flex;

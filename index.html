@@ -1,305 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience the finest coffee and pastries at Cafe Treat. A cozy haven for coffee lovers, founded in 2022 by Izik Adio. Discover our menu, read customer reviews, and contact us for a delightful cafe experience."
+    />
+    <meta
+      name="keywords"
+      content="Cafe Treat, coffee, pastries, cafe, coffee lovers, best coffee, delicious pastries, cozy atmosphere, customer reviews"
+    />
+    <meta name="author" content="Izik Adio" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#8e7055" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description"
-    content="Hi there! I'm Isaac Adio (Zik-Tech), a curious and enthusiastic software engineer, specializing in front-end web development. This is one of my creative projects showcasing my passion for technology. Enjoy exploring this creation!" />
-  <meta name="keywords" content="Isaac Adio, Zik-Tech, frontend developer, " />
-  <meta name="author" content="Isaac Adio (Zik-Tech)" />
-  <meta name="robots" content="index, follow" />
-  <title>Cafe Treat</title>
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta
+      property="og:title"
+      content="Cafe Treat - Finest Coffee and Pastries"
+    />
+    <meta
+      property="og:description"
+      content="Indulge in the finest coffee and pastries at Cafe Treat. Founded in 2022 by Izik Adio, our cozy cafe offers a delightful atmosphere for coffee lovers. Explore our menu, read customer reviews, and contact us for an exceptional cafe experience."
+    />
+    <meta property="og:image" content="url_to_your_logo_image" />
+    <meta property="og:url" content="url_to_your_website" />
+    <meta property="og:type" content="website" />
 
-  <link rel="shortcut icon" href="/images/cafe-icon.png" type="x-icon" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cafe Treat - Finest Coffee and Pastries"
+    />
+    <meta
+      name="twitter:description"
+      content="Indulge in the finest coffee and pastries at Cafe Treat. Founded in 2022 by Izik Adio, our cozy cafe offers a delightful atmosphere for coffee lovers. Explore our menu, read customer reviews, and contact us for an exceptional cafe experience."
+    />
+    <meta name="twitter:image" content="url_to_your_logo_image" />
 
-  <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- <script src="/path/to/script.js" defer></script> -->
+    <!-- Stylesheets and Title -->
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- Open Graph Meta Tags (for social media sharing) -->
-  <meta property="og:title" content="Cafe Treat" />
-  <meta property="og:description"
-    content="Hi there! I'm Isaac Adio (Zik-Tech), a curious and enthusiastic software engineer, specializing in front-end web development. This is one of my creative projects showcasing my passion for technology. Enjoy exploring this creation!" />
-  <meta property="og:image" content="/path/to/og-image.jpg" />
-  <meta property="og:url" content="https://cafe-treat.netlify.app/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Isaac Adio (Zik-Tech)" />
+    <title>Cafe Treat - Finest Coffee and Pastries</title>
+  </head>
 
-  <!-- Twitter Card Meta Tags (for Twitter sharing) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@zik-tech" />
-  <meta name="twitter:title" content="Cafe Treat" />
-  <meta name="twitter:description"
-    content="Hi there! I'm Isaac Adio (Zik-Tech), a curious and enthusiastic software engineer, specializing in front-end web development. This is one of my creative projects showcasing my passion for technology. Enjoy exploring this creation!" />
-</head>
-
-<body>
-  <header id="hero">
-    <div id="top">
-      <h1>
-        <em>Cafe Treat </em>
-      </h1>
-      <nav>
-        <ul class="home-nav">
-          <li><a href="#About-us">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#Review">Reviews</a></li>
-          <li style="white-space: nowrap">
-            <a href="#contact">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div id="header__p">
-      <p id="tagline">The best coffee and pastries in town</p>
-      <p id="cta" style="padding-top: 2vh">Open 7am-7pm, 7 days a week</p>
-      <p>
-        <a id="more" href="#About-us">Learn More</a>
-      </p>
-    </div>
-
-    <div id="hero__cta">
-      <a href="#menu">Order Online Now</a>
-    </div>
-  </header>
-
-  <main>
-    <!-- About Section -->
-    <section id="About-us">
-      <img src="./images/about.jpg" alt="About Cafe Treat" />
-      <div>
-        <h3 id="about__h3">About <span id="about__span">Cafe Treat</span></h3>
-        <p class="about__p">
-          Cafe Treat was founded in 2022 by Isaac Adio, a passionate coffee
-          lover with a dream of creating a cafe that would offer the best
-          possible coffee experience. Isaac wanted to create a space where
-          people could come together to enjoy a cup of coffee, a pastry, and
-          good conversation.
-        </p>
-        <br />
-        <p class="about__p">
-          Cafe Treat's mission is to provide its customers with the highest
-          quality coffee and pastries in a warm and inviting atmosphere. The
-          cafe is committed to using only the freshest ingredients and to
-          creating coffee drinks that are both delicious and satisfying.
-        </p>
-
-        <button id="about__more">
-          <a href="./html/about.html">Learn More</a>
-          <span class="arrow">➡</span>
-        </button>
+  <body>
+    <header id="hero">
+      <div id="top">
+        <h1>
+          <em>Cafe Treat </em>
+        </h1>
+        <nav>
+          <ul class="home-nav">
+            <li><a href="#About-us">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#Review">Reviews</a></li>
+            <li style="white-space: nowrap">
+              <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
 
-    <!-- Menu Section -->
-    <section id="menu">
-      <div id="menu__first--div">
-        <div style="width: fit-content">
-          <h3 id="menu__h3">Our Menu</h3>
-          <button id="menu__more">
-            <a href="./html/about.html">See More</a>
+      <div id="header__p">
+        <p id="tagline">The best coffee and pastries in town</p>
+        <p id="cta" style="padding-top: 2vh">Open 7am-7pm, 7 days a week</p>
+        <p>
+          <a id="more" href="#About-us">Learn More</a>
+        </p>
+      </div>
+
+      <div id="hero__cta">
+        <a href="#menu">Order Online Now</a>
+      </div>
+    </header>
+    0
+    <main>
+      <!-- About Section -->
+      <section id="About-us">
+        <img src="./images/about.jpg" alt="About Cafe Treat" />
+        <div>
+          <h3 id="about__h3">About <span id="about__span">Cafe Treat</span></h3>
+          <p class="about__p">
+            Cafe Treat was founded in 2022 by Izik Adio, a passionate coffee
+            lover with a dream of creating a cafe that would offer the best
+            possible coffee experience. Izik wanted to create a space where
+            people could come together to enjoy a cup of coffee, a pastry, and
+            good conversation.
+          </p>
+          <br />
+          <p class="about__p">
+            Cafe Treat's mission is to provide its customers with the highest
+            quality coffee and pastries in a warm and inviting atmosphere. The
+            cafe is committed to using only the freshest ingredients and to
+            creating coffee drinks that are both delicious and satisfying.
+          </p>
+
+          <button id="about__more">
+            <a href="./html/about.html">Learn More</a>
             <span class="arrow">➡</span>
           </button>
         </div>
-        <p id="menu__p">
-          Cafe Treat's menu features a variety of coffee drinks, pastries, and
-          other food items. The coffee drinks are made with freshly-ground
-          beans and are available in a variety of flavors. The pastries are
-          made fresh daily and include a variety of sweet and savory options.
-        </p>
-      </div>
+      </section>
 
-      <div id="menu__second--div">
-        <p class="head">
-          <span class="head__name">Coffee</span><span class="head__name">price</span>
-        </p>
-        <p class="item" id="item-1">
-          <span class="item__detail item__name">Espresso</span><span class="item__price item__detail">$5.00</span>
-          <span class="item-image" id="item-image-1"><button id="item-button-1" class="item-button"></button></span>
-        </p>
-        <p class="item" id="item-2">
-          <span class="item__detail item__name">Americano</span><span class="item__price item__detail">$5.50</span>
-          <span class="item-image" id="item-image-2"><button id="item-button-2" class="item-button"></button></span>
-        </p>
-        <p class="item" id="item-3">
-          <span class="item__detail item__name">Iced Coffee</span><span class="item__price item__detail">$5.25</span>
-          <span class="item-image" id="item-image-3"><button id="item-button-3" class="item-button"></button></span>
-        </p>
-        <p class="item" id="item-4">
-          <span class="item__detail item__name">Cappuccino</span><span class="item__price item__detail">$5.25</span>
-          <span class="item-image" id="item-image-4"><button id="item-button-4" class="item-button"></button></span>
-        </p>
-        <p class="item" id="item-5">
-          <span class="item__detail item__name">Flat White</span><span class="item__price item__detail">$5.75</span>
-          <span class="item-image" id="item-image-5"><button id="item-button-5" class="item-button"></button></span>
-        </p>
-      </div>
-
-      <div id="menu__second--div">
-        <p class="head">
-          <span class="head__name">pastries</span><span class="head__name">price</span>
-        </p>
-        <p class="item" id="item-6">
-          <span class="item__detail item__name">Croissant</span><span class="item__price item__detail">$3.50</span>
-          <span class="item-image" id="item-image-6"><button id="item-button-6" class="item-button"></button></span>
-        </p>
-        <p class="item" id="item-7">
-          <span class="item__detail item__name">Danish</span><span class="item__price item__detail">$3.75</span>
-          <span class="item-image" id="item-image-7"><button id="item-button-7" class="item-button"></button></span>
-        </p>
-        <p class="item" id="item-8">
-          <span class="item__detail item__name">Almond Croissants</span><span
-            class="item__price item__detail">$4.50</span>
-          <span class="item-image" id="item-image-8"><button id="item-button-8" class="item-button"></button></span>
-        </p>
-        <p class="item" id="item-9">
-          <span class="item__detail item__name">Apple Turnover</span><span class="item__price item__detail">$3.50</span>
-          <span class="item-image" id="item-image-9"><button id="item-button-9" class="item-button"></button></span>
-        </p>
-        <p class="item" id="item-10">
-          <span class="item__detail item__name">Scone</span><span class="item__price item__detail">$3.75</span>
-          <span class="item-image" id="item-image-10"><button id="item-button-10" class="item-button"></button></span>
-        </p>
-      </div>
-    </section>
-
-    <!-- Reviews Section-->
-    <section id="Review">
-      <h2 style="text-align: center; font-size: max(2vw, 1rem); margin-top: 1vh">
-        What our customers say
-      </h2>
-      <div id="review">
-        <div class="reviews">
-          <img src="./images/reviews-img/sarah.png" alt="Client's Image" />
-          <p>
-            <q>
-              I love the atmosphere at Cafe Treat. It's so cozy and inviting,
-              and the staff is always friendly. The coffee is amazing, and the
-              pastries are delicious. I highly recommend this place!
-            </q>
-            <span class="names"> - Sarah J.</span>
-          </p>
-        </div>
-        <div class="reviews">
-          <img src="./images/reviews-img/john.png" alt="Client's Image" />
-          <p>
-            <q>
-              I'm a regular at Cafe Treat, and I've never been disappointed.
-              The coffee is always fresh and delicious, and the pastries are
-              always made with love. I highly recommend this place to anyone
-              who loves coffee and pastries!
-            </q>
-            <span class="names"> - John D.</span>
-          </p>
-        </div>
-
-        <div class="reviews">
-          <img src="./images/reviews-img/jane.png" alt="Client's Image" />
-
-          <p>
-            <q>
-              I was looking for a place to get a quick coffee before work, and
-              I'm so glad I found Cafe Treat. The coffee was delicious and the
-              staff was also very friendly and helpful. I will definitely be
-              back!
-            </q>
-            <span class="names"> - Jane F.</span>
-          </p>
-        </div>
-
-        <div class="reviews">
-          <img src="./images/reviews-img/peter.png" alt="Client's Image" />
-
-          <p>
-            <q>
-              I'm so glad I found Cafe Treat! The coffee is amazing, and the
-              pastries are even better. The atmosphere is perfect for a quick
-              coffee break or a leisurely brunch. I highly recommend this
-              place to anyone looking for a delicious pastry.
-            </q>
-            <span class="names"> - Peter G.</span>
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer id="contact">
-    <section id="footer__main">
-      <div id="footer__first-section">
-        <h2 id="footer__h2">Cafe Treat</h2>
-
-        <div id="footer__contact">
-          <em>
-            Cafe Treat is open from <strong>7am to 7pm</strong>, seven days a
-            week.
-          </em>
-          <p>☎ &nbsp;&nbsp;&nbsp;(555) 555-5555.</p>
-
-          <address>123 Main Street,<br />Anytown,<br />CA 12345.</address>
-        </div>
-      </div>
-
-      <div id="footer__second-section">
-        <h3>Contact Us</h3>
-        <form class="news" action="./html/success.html" method="post">
-          <div id="form__name">
-            <label for="name">Full-Name: </label>
-            <input type="text" id="name" autocomplete="on" />
-          </div>
-
-          <div id="form__email">
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" required autocomplete="on" />
-          </div>
-
-          <div id="form__subject">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" required />
-          </div>
-
-          <div id="form__content">
-            <label for="message">Message:</label>
-            <textarea name="message" id="massage" cols="30" rows="6" required></textarea>
-          </div>
-
-          <p class="footer__p">
-            Please let us know how we can help you. We look forward to hearing
-            from you!
-          </p>
-          <div id="buttons">
-            <button class="footer__button" type="reset" value="Reset">
-              Reset
-            </button>
-            <button class="footer__button" type="submit" value="Subscribe">
-              Submit
+      <!-- Menu Section -->
+      <section id="menu">
+        <div id="menu__first--div">
+          <div style="width: fit-content">
+            <h3 id="menu__h3">Our Menu</h3>
+            <button id="menu__more">
+              <a href="./html/about.html">See More</a>
+              <span class="arrow">➡</span>
             </button>
           </div>
-          <p class="footer__p">Thank you for contacting Cafe Treat!</p>
-        </form>
-      </div>
+          <p id="menu__p">
+            Cafe Treat's menu features a variety of coffee drinks, pastries, and
+            other food items. The coffee drinks are made with freshly-ground
+            beans and are available in a variety of flavors. The pastries are
+            made fresh daily and include a variety of sweet and savory options.
+          </p>
+        </div>
 
-      <div id="footer__third-section">
-        <ul class="footer__nav">
-          <li><a href="#About-us">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#Review">Reviews</a></li>
-        </ul>
-        <ul class="footer__nav">
-          <li><a href="">Coffee</a></li>
-          <li><a href="">Pastries</a></li>
-          <li><a href="">Others</a></li>
-        </ul>
-      </div>
-    </section>
+        <div id="menu__second--div">
+          <p class="head">
+            <span class="head__name">Coffee</span
+            ><span class="head__name">price</span>
+          </p>
+          <p class="item" id="item-1">
+            <span class="item__detail item__name">Espresso</span
+            ><span class="item__price item__detail">$5.00</span>
+            <span class="item-image" id="item-image-1"
+              ><button id="item-button-1" class="item-button"></button
+            ></span>
+          </p>
+          <p class="item" id="item-2">
+            <span class="item__detail item__name">Americano</span
+            ><span class="item__price item__detail">$5.50</span>
+            <span class="item-image" id="item-image-2"
+              ><button id="item-button-2" class="item-button"></button
+            ></span>
+          </p>
+          <p class="item" id="item-3">
+            <span class="item__detail item__name">Iced Coffee</span
+            ><span class="item__price item__detail">$5.25</span>
+            <span class="item-image" id="item-image-3"
+              ><button id="item-button-3" class="item-button"></button
+            ></span>
+          </p>
+          <p class="item" id="item-4">
+            <span class="item__detail item__name">Cappuccino</span
+            ><span class="item__price item__detail">$5.25</span>
+            <span class="item-image" id="item-image-4"
+              ><button id="item-button-4" class="item-button"></button
+            ></span>
+          </p>
+          <p class="item" id="item-5">
+            <span class="item__detail item__name">Flat White</span
+            ><span class="item__price item__detail">$5.75</span>
+            <span class="item-image" id="item-image-5"
+              ><button id="item-button-5" class="item-button"></button
+            ></span>
+          </p>
+        </div>
 
-    <hr width="90%" />
-    <p>&copy; 2023 Cafe Treat. All rights reserved.</p>
-  </footer>
-</body>
+        <div id="menu__second--div">
+          <p class="head">
+            <span class="head__name">pastries</span
+            ><span class="head__name">price</span>
+          </p>
+          <p class="item" id="item-6">
+            <span class="item__detail item__name">Croissant</span
+            ><span class="item__price item__detail">$3.50</span>
+            <span class="item-image" id="item-image-6"
+              ><button id="item-button-6" class="item-button"></button
+            ></span>
+          </p>
+          <p class="item" id="item-7">
+            <span class="item__detail item__name">Danish</span
+            ><span class="item__price item__detail">$3.75</span>
+            <span class="item-image" id="item-image-7"
+              ><button id="item-button-7" class="item-button"></button
+            ></span>
+          </p>
+          <p class="item" id="item-8">
+            <span class="item__detail item__name">Almond Croissants</span
+            ><span class="item__price item__detail">$4.50</span>
+            <span class="item-image" id="item-image-8"
+              ><button id="item-button-8" class="item-button"></button
+            ></span>
+          </p>
+          <p class="item" id="item-9">
+            <span class="item__detail item__name">Apple Turnover</span
+            ><span class="item__price item__detail">$3.50</span>
+            <span class="item-image" id="item-image-9"
+              ><button id="item-button-9" class="item-button"></button
+            ></span>
+          </p>
+          <p class="item" id="item-10">
+            <span class="item__detail item__name">Scone</span
+            ><span class="item__price item__detail">$3.75</span>
+            <span class="item-image" id="item-image-10"
+              ><button id="item-button-10" class="item-button"></button
+            ></span>
+          </p>
+        </div>
+      </section>
 
+      <!-- Reviews Section-->
+      <section id="Review">
+        <h2
+          style="text-align: center; font-size: max(2vw, 1rem); margin-top: 1vh"
+        >
+          What our customers say
+        </h2>
+        <div id="review">
+          <div class="reviews">
+            <img src="./images/reviews-img/sarah.png" alt="Client's Image" />
+            <p>
+              <q>
+                I love the atmosphere at Cafe Treat. It's so cozy and inviting,
+                and the staff is always friendly. The coffee is amazing, and the
+                pastries are delicious. I highly recommend this place!
+              </q>
+              <span class="names"> - Sarah J.</span>
+            </p>
+          </div>
+          <div class="reviews">
+            <img src="./images/reviews-img/john.png" alt="Client's Image" />
+            <p>
+              <q>
+                I'm a regular at Cafe Treat, and I've never been disappointed.
+                The coffee is always fresh and delicious, and the pastries are
+                always made with love. I highly recommend this place to anyone
+                who loves coffee and pastries!
+              </q>
+              <span class="names"> - John D.</span>
+            </p>
+          </div>
+
+          <div class="reviews">
+            <img src="./images/reviews-img/jane.png" alt="Client's Image" />
+
+            <p>
+              <q>
+                I was looking for a place to get a quick coffee before work, and
+                I'm so glad I found Cafe Treat. The coffee was delicious and the
+                staff was also very friendly and helpful. I will definitely be
+                back!
+              </q>
+              <span class="names"> - Jane F.</span>
+            </p>
+          </div>
+
+          <div class="reviews">
+            <img src="./images/reviews-img/peter.png" alt="Client's Image" />
+
+            <p>
+              <q>
+                I'm so glad I found Cafe Treat! The coffee is amazing, and the
+                pastries are even better. The atmosphere is perfect for a quick
+                coffee break or a leisurely brunch. I highly recommend this
+                place to anyone looking for a delicious pastry.
+              </q>
+              <span class="names"> - Peter G.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <section id="footer__main">
+        <div id="footer__first-section">
+          <h2 id="footer__h2">Cafe Treat</h2>
+
+          <div id="footer__contact">
+            <em>
+              Cafe Treat is open from <strong>7am to 7pm</strong>, seven days a
+              week.
+            </em>
+            <p>☎ &nbsp;&nbsp;&nbsp;(555) 555-5555.</p>
+
+            <address>123 Main Street,<br />Anytown,<br />CA 12345.</address>
+          </div>
+        </div>
+
+        <div id="footer__second-section">
+          <h3>Contact Us</h3>
+          <form class="news" action="./html/success.html" method="post">
+            <div id="form__name">
+              <label for="name">Full-Name: </label>
+              <input type="text" id="name" autocomplete="on" />
+            </div>
+
+            <div id="form__email">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                autocomplete="on"
+              />
+            </div>
+
+            <div id="form__subject">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" required />
+            </div>
+
+            <div id="form__content">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="massage"
+                cols="30"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <p class="footer__p">
+              Please let us know how we can help you. We look forward to hearing
+              from you!
+            </p>
+            <div id="buttons">
+              <button class="footer__button" type="reset" value="Reset">
+                Reset
+              </button>
+              <button class="footer__button" type="submit" value="Subscribe">
+                Submit
+              </button>
+            </div>
+            <p class="footer__p">Thank you for contacting Cafe Treat!</p>
+          </form>
+        </div>
+
+        <div id="footer__third-section">
+          <ul class="footer__nav">
+            <li><a href="#About-us">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#Review">Reviews</a></li>
+          </ul>
+          <ul class="footer__nav">
+            <li><a href="">Coffee</a></li>
+            <li><a href="">Pastries</a></li>
+            <li><a href="">Others</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <hr width="90%" />
+      <p>&copy; 2024 Cafe Treat. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

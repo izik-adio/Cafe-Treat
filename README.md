@@ -4,7 +4,7 @@
 
 Welcome to Cafe Treat, a coffee-themed portfolio website showcasing my passion for front-end web development and creativity.
 
-Visit the live website: [Cafe Treat](https://zik-tech.github.io/cafe-project/)
+Visit the live website: [Cafe Treat](https://cafe-treat.vercel.app/)
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 Please note that Cafe Treat is currently under active development. New features, improvements, and content updates are being regularly added. We appreciate your patience as we work to make Cafe Treat even better!
 
-For the latest updates, feel free to check the [Live Website](https://zik-tech.github.io/cafe-project/). If you have any feedback or suggestions, we'd love to hear from you.
+For the latest updates, feel free to check the [Live Website](https://cafe-treat.vercel.app/). If you have any feedback or suggestions, we'd love to hear from you.
 
 ---
 
