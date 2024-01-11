@@ -36,7 +36,7 @@ Have questions, feedback, or just want to reach out? Feel free to contact us thr
 
 ## Technologies Used
 
-This project was built using:
+This project is built using:
 
 - HTML5
 - CSS3
