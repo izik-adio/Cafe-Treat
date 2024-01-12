@@ -42,35 +42,35 @@
     <meta name="twitter:image" content="url_to_your_logo_image" />
 
     <!-- Favicon -->
-    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
     <link
       rel="icon"
-      href="./images/favicon/favicon-32x32.png"
+      href="./assets/favicon/favicon-32x32.png"
       sizes="32x32"
       type="image/png"
     />
     <link
       rel="icon"
-      href="./images/favicon/favicon-16x16.png"
+      href="./assets/favicon/favicon-16x16.png"
       sizes="16x16"
       type="image/png"
     />
     <link
       rel="apple-touch-icon"
-      href="./images/favicon/apple-touch-icon.png"
+      href="./assets/favicon/apple-touch-icon.png"
       sizes="180x180"
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="./images/favicon/safari-pinned-tab.svg"
+      href="./assets/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Stylesheets and Title -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <title>Cafe Treat - Finest Coffee and Pastries</title>
   </head>
@@ -109,7 +109,7 @@
     <main>
       <!-- About Section -->
       <section id="About-us">
-        <img src="./images/about.jpg" alt="About Cafe Treat" />
+        <img src="./assets/images/about.jpg" alt="About Cafe Treat" />
         <div>
           <h3 id="about__h3">About <span id="about__span">Cafe Treat</span></h3>
           <p class="about__p">
@@ -127,10 +127,10 @@
             creating coffee drinks that are both delicious and satisfying.
           </p>
 
-          <button id="about__more">
-            <a href="./html/about.html">Learn More</a>
+          <a id="about__more" href="/about.html">
+            Learn More
             <span class="arrow">➡</span>
-          </button>
+          </a>
         </div>
       </section>
 
@@ -139,10 +139,11 @@
         <div id="menu__first--div">
           <div style="width: fit-content">
             <h3 id="menu__h3">Our Menu</h3>
-            <button id="menu__more">
-              <a href="./html/about.html">See More</a>
+
+            <a id="menu__more" href="/about.html">
+              See More
               <span class="arrow">➡</span>
-            </button>
+            </a>
           </div>
           <p id="menu__p">
             Cafe Treat's menu features a variety of coffee drinks, pastries, and
@@ -246,7 +247,10 @@
         </h2>
         <div id="review">
           <div class="reviews">
-            <img src="./images/reviews-img/sarah.png" alt="Client's Image" />
+            <img
+              src="./assets/reviews-img/sarah.png"
+              alt="Client's Image"
+            />
             <p>
               <q>
                 I love the atmosphere at Cafe Treat. It's so cozy and inviting,
@@ -257,7 +261,10 @@
             </p>
           </div>
           <div class="reviews">
-            <img src="./images/reviews-img/john.png" alt="Client's Image" />
+            <img
+              src="./assets/reviews-img/john.png"
+              alt="Client's Image"
+            />
             <p>
               <q>
                 I'm a regular at Cafe Treat, and I've never been disappointed.
@@ -270,7 +277,10 @@
           </div>
 
           <div class="reviews">
-            <img src="./images/reviews-img/jane.png" alt="Client's Image" />
+            <img
+              src="./assets/reviews-img/jane.png"
+              alt="Client's Image"
+            />
 
             <p>
               <q>
@@ -284,7 +294,10 @@
           </div>
 
           <div class="reviews">
-            <img src="./images/reviews-img/peter.png" alt="Client's Image" />
+            <img
+              src="./assets/reviews-img/peter.png"
+              alt="Client's Image"
+            />
 
             <p>
               <q>
@@ -319,9 +332,9 @@
 
         <div id="footer__second-section">
           <h3>Contact Us</h3>
-          <form class="news" action="./html/success.html" method="post">
+          <form class="news" action="/success.html" method="post">
             <div id="form__name">
-              <label for="name">Full-Name: </label>
+              <label for="name">Name: </label>
               <input type="text" id="name" autocomplete="on" />
             </div>
 
@@ -336,16 +349,11 @@
               />
             </div>
 
-            <div id="form__subject">
-              <label for="subject">Subject:</label>
-              <input type="text" id="subject" required />
-            </div>
-
             <div id="form__content">
               <label for="message">Message:</label>
               <textarea
                 name="message"
-                id="massage"
+                id="message"
                 cols="30"
                 rows="6"
                 required
@@ -364,7 +372,10 @@
                 Submit
               </button>
             </div>
-            <p class="footer__p">Thank you for contacting Cafe Treat!</p>
+            <p class="footer__p">
+              Thank you for reaching out to us. Your feedback and inquiries are
+              always welcome. We look forward to connecting with you soon.
+            </p>
           </form>
         </div>
 

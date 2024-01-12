@@ -1,7 +1,5 @@
 # Cafe Treat - Coffee-Themed Portfolio Website
 
-![Cafe Treat Logo](/images/mobile.gif)
-
 Welcome to Cafe Treat, a coffee-themed portfolio website showcasing my passion for front-end web development and creativity.
 
 Visit the live website: [Cafe Treat](https://cafe-treat.vercel.app/)

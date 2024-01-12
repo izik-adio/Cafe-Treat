@@ -1,0 +1,10 @@
+# Ignore bash script
+git_push.sh
+
+# Ignore any temporary files
+*.swp
+*.swo
+*~
+
+# Ignore any backup files
+*.bak
