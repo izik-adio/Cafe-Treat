@@ -480,6 +480,14 @@ video {
       U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+h1,
+  h2,
+  h3,
+  ul {
+  font-family: Playfair Display, serif;
+  text-transform: capitalize;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -586,4 +594,28 @@ video {
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 230 235 / var(--tw-bg-opacity));
+}
+
+.font-actor {
+  font-family: Actor, sans-serif;
+}
+
+.text-deepBrown {
+  --tw-text-opacity: 1;
+  color: rgb(31 27 41 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:scroll-smooth {
+    scroll-behavior: smooth;
+  }
 }

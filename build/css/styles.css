@@ -1,40 +1,7 @@
-:root {
-  /* Color Variables */
-  --deep-brown: #1f1b29;
-  --light-brown: #77595b;
-  --bg-color: #e6e6eb;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  /* Body Style */
-  background: var(--bg-color);
-  color: var(--deep-brown);
-  font-family: Actor;
-}
-
-h1,
-h2,
-h3,
-h4,
-ul {
-  /* Headings and Unordered List Styles */
-  font-family: "Playfair Display";
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-}
-
-/* HEADER Section */
-
 #hero {
   /* Hero Section Style  */
   position: relative;
-  height: 100vh;
-  margin-left: 2vw;
-  background: #ffffff
+  background:
     url(../images/coffee-mug-coffee-beans-white-background.jpg) no-repeat;
   background-size: cover;
 }
@@ -242,7 +209,6 @@ a {
   font-weight: 400;
   text-align: justify;
 }
-
 
 #about__more {
   /* "Read More" Link Styles in About Section */
