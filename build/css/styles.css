@@ -1,7 +1,5 @@
 #hero {
-  /* Hero Section Style  */
-  position: relative;
-  background:
+  background: #f0f0f2
     url(../images/coffee-mug-coffee-beans-white-background.jpg) no-repeat;
   background-size: cover;
 }
@@ -14,41 +12,6 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-}
-
-@media screen and (max-width: 700px) {
-  #top {
-    gap: 3vw;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  #top {
-    justify-content: center;
-    gap: 0;
-  }
-}
-
-h1 {
-  /* Main Heading Style */
-  /* width: fit-content;
-  height: fit-content; */
-  font-size: max(6vw, 3rem);
-  opacity: 0.9;
-  white-space: nowrap;
-}
-
-h1:hover,
-h1:active,
-h1:focus {
-  /* Main Heading Hover Style */
-  opacity: 1;
-  color: var(--light-brown);
-}
-
-h1::first-letter {
-  /* Styling for the first letter of main heading */
-  font-size: max(8vw, 4.3rem);
 }
 
 ul {
@@ -78,13 +41,6 @@ ul {
   padding: 0.5rem;
   font-weight: 600;
   font-size: max(2vw, 1.2rem);
-}
-
-a {
-  /* Generic Link Styles */
-  color: var(--deep-brown);
-  display: block;
-  font-weight: 900;
 }
 
 .home-nav a:hover,
@@ -722,80 +678,4 @@ textarea {
 .footer__nav a:hover {
   border: 1px solid var(--light-brown);
   border-radius: 10px;
-}
-
-@media screen and (max-width: 1200px) {
-  /* Responsive Styles */
-  #hero {
-    background-position: center center;
-    height: 95vh;
-  }
-  h1 {
-    font-size: max(5vw, 3rem);
-  }
-  #tagline {
-    font-size: max(3vw, 1.2rem);
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  /* Responsive Styles */
-  #hero {
-    height: 85vh;
-  }
-  h1 {
-    font-size: max(7vw, 3rem);
-  }
-  #tagline {
-    font-size: max(3vw, 1rem);
-  }
-}
-
-@media screen and (max-width: 800px) {
-  /* Responsive Styles */
-  #hero {
-    height: 75vh;
-  }
-  h1 {
-    font-size: max(10vw, 3rem);
-  }
-  #tagline {
-    font-size: max(3vw, 1rem);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  /* Responsive Styles */
-  #hero {
-    height: 65vh;
-  }
-  h1 {
-    font-size: max(12vw, 3rem);
-  }
-  #tagline {
-    font-size: max(4vw, 1rem);
-  }
-  .home-nav a,
-  #hero__cta a,
-  .about__p {
-    font-size: max(3.5vw, 1rem);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  /* Responsive Styles */
-  #hero {
-    height: 60vh;
-  }
-  h1 {
-    font-size: max(15vw, 3rem);
-  }
-  #tagline {
-    font-size: max(5vw, 1rem);
-  }
-  .home-nav a,
-  #hero__cta a,
-  .about__p {
-    font-size: max(4vw, 1rem);
-  }
 }

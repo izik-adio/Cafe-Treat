@@ -600,22 +600,43 @@ h1,
   min-height: 100vh;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .bg-background {
   --tw-bg-opacity: 1;
-  background-color: rgb(230 230 235 / var(--tw-bg-opacity));
+  background-color: rgb(240 240 242 / var(--tw-bg-opacity));
 }
 
 .font-actor {
   font-family: Actor, sans-serif;
 }
 
-.text-deepBrown {
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-dBrown {
   --tw-text-opacity: 1;
-  color: rgb(31 27 41 / var(--tw-text-opacity));
+  color: rgb(28 26 38 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
   .sm\:scroll-smooth {
     scroll-behavior: smooth;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
