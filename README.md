@@ -1,7 +1,7 @@
 # Cafe Treat - Coffee-Themed Portfolio Website
 
 Welcome to Cafe Treat, a coffee-themed portfolio website showcasing my passion for front-end web development and creativity.
-![Preview Image](assets\images\preview-img\preview.png)
+<!-- ![Preview Image](assets\images\preview-img\preview.png) -->
 
 Visit the live website: [Cafe Treat](https://cafe-treat.vercel.app/)
 
@@ -31,14 +31,14 @@ The Reviews section features testimonials from satisfied customers who have enjo
 
 ## Contact
 
-Have questions, feedback, or just want to reach out? Feel free to contact us through the provided contact form or visit us at our physical location.
+Have questions, feedback, or just want to reach out? Feel free to contact us through the provided contact form.
 
 ## Technologies Used
 
 This project is built using:
 
 - HTML5
-- CSS3
+- Tailwind CSS
 - JavaScript
 
 ## Under Development
