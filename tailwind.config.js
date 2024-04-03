@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         dBrown: "#1C1A26", // Deep Brown (Text - Headings, Buttons, CTAs)
         lBrown: "#88675E", // Lighter Brown (Text - Secondary, Highlights)
-        highlight: "#A9BF04", // Bright Green (CTAs, Special Offers)
+        highlight: "#6A9402", // Bright Green (CTAs, Special Offers)
       },
       fontFamily: {
         actor: ["Actor", "sans-serif"],

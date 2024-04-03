@@ -31,6 +31,9 @@
   ul {
     @apply font-playFair capitalize;
   }
+  section {
+    @apply flex gap-6 min-h-96 scroll-m-20  px-4
+  }
 }
 @layer components {
   #hero {

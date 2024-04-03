@@ -62,7 +62,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body class="bg-white text-dBrown font-actor mx-auto container">
+  <body class="bg-white text-dBrown font-actor mx-auto max-w-screen-2xl">
     <header
       class="flex py-2 px-4 align-middle justify-between bg-white/95 shadow-lg sticky top-0 z-10">
       <h1
@@ -87,55 +87,65 @@
       </div>
     </header>
 
-    <section
-      id="hero"
-      class="flex flex-col gap-6 align-middle min-h-96 sm:min-h-screen scroll-m-20 text-left px-4">
-      <div class="capitalize text-2xl sm:text-3xl md:text-4xl md:mt-32 mt-8">
-        <h2><span class="text-highlight">Start</span> your day</h2>
-        <h2>with a <span class="text-highlight">Great</span> cup of coffee</h2>
-      </div>
-
-      <p
-        class="hidden sm:inline-block sm:w-1/2 md:w-2/5 mr-auto text-sm sm:text-base md:text-lg lg:text-xl">
-        Indulge in the delightful experience of savoring
-        <span class="italic text-lBrown scale-110 font-medium">freshly brewed
-          coffee</span>
-        and
-        <span class="italic text-lBrown scale-110 font-medium">
-          indulgent pastries</span>
-        at <span class="font-semibold font-playFair text-lBrown scale-110">Cafe-Treat</span>
-      </p>
-      <p>Enjoy freshly brewed coffee and delicious pastries at Cafe-Treat</p>
-
-      <a href="#menu" class="absolute bottom-10 right-5">Order Online Now</a>
-    </section>
-
     <main>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="flex-col text-left sm:min-h-screen">
+
+        <h2
+          class="capitalize text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl md:mt-32 mt-8">
+          <span
+            class="text-highlight">Start</span> your day<br>with a <span
+            class="text-highlight">Great</span> cup of coffee</h2>
+
+        <p
+          class="hidden sm:inline-block sm:w-1/2 md:w-2/5 mr-auto text-sm font-medium sm:text-lg md:text-xl lg:text-2xl">
+          Indulge in the delightful experience of savoring
+          <span class="italic text-lBrown scale-110 font-medium">freshly brewed
+            coffee</span>
+          and
+          <span class="italic text-lBrown scale-110 font-medium">
+            indulgent pastries</span>
+          at <span
+            class="font-semibold font-playFair text-lBrown scale-110 whitespace-nowrap">Cafe-Treat</span>
+        </p>
+        <p class="sm:hidden w-1/2 text-sm">Enjoy freshly brewed coffee
+          and delicious pastries at<span
+            class="font-semibold font-playFair text-lBrown scale-110 whitespace-nowrap">
+            Cafe-Treat.</span>
+        </p>
+
+        <a href="#menu"
+          class="max-w-24 text-center bg-highlight py-1 px-2 rounded-md text-white shadow-md mt-4 hover:scale-110">Order
+          Now</a>
+      </section>
+
       <!-- About Section -->
-      <section id="About-us">
-        <img src="./images/about.jpg" alt="About Cafe Treat" />
-        <div>
-          <h3 id="about__h3">About <span id="about__span">Cafe Treat</span></h3>
-          <p class="about__p">
+      <section id="About-us"
+        class="flex-col min-w-full sm:flex-row h-fit pb-6 items-center ">
+        <img
+          class="w-full min-h-full md:min-w-[400px] lg:min-w-[600px] sm:w-1/2"
+          src="./images/about.jpg"
+          alt="Cafe Treat interior" />
+        <div
+          class="flex flex-col gap-2 flex-wrap justify-center items-center h-full sm:w-auto">
+          <h3 class="text-2xl">About Cafe-Treat</h3>
+          <p class>
             Cafe Treat was founded in 2022 by Izik Adio, a passionate coffee
             lover with a dream of creating a cafe that would offer the best
-            possible coffee experience. Izik wanted to create a space where
-            people could come together to enjoy a cup of coffee, a pastry, and
-            good conversation.
+            possible coffee experience.
           </p>
-          <br />
-          <p class="about__p">
+
+          <p class>
             Cafe Treat's mission is to provide its customers with the highest
             quality coffee and pastries in a warm and inviting atmosphere. The
             cafe is committed to using only the freshest ingredients and to
             creating coffee drinks that are both delicious and satisfying.
           </p>
-
-          <a id="about__more" href="/about.html">
-            Learn More
-            <span class="arrow">➡</span>
-          </a>
+          <a href="./pages/about.html">Learn More </a>
         </div>
+
       </section>
 
       <!-- Menu Section -->
