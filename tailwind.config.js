@@ -5,9 +5,7 @@ module.exports = {
     extend: {
       colors: {
         dBrown: "#1C1A26", // Deep Brown (Text - Headings, Buttons, CTAs)
-        lBrown: "#58413D", // Lighter Brown (Text - Secondary, Highlights)
-        background: "#F0F0F2", // White (Background - Main Website Area)
-        foreground: "#e6e6eb", // Off-White (Content Areas, Product Boxes)
+        lBrown: "#88675E", // Lighter Brown (Text - Secondary, Highlights)
         highlight: "#A9BF04", // Bright Green (CTAs, Special Offers)
       },
       fontFamily: {
