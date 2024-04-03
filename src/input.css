@@ -33,4 +33,12 @@
   }
 }
 @layer components {
+  #hero {
+    background: #f0f0f2
+      url(../images/coffee-mug-coffee-beans-white-background.jpg) no-repeat;
+    @apply bg-contain bg-left sm:bg-cover sm:bg-center;
+  }
+  .main-nav-link {
+    @apply text-xl font-semibold p-2 justify-center hover:border-t-2 hover:border-l-2 hover:pt-1 focus:border-t-2 focus:border-l-2 focus:pt-1 hover:text-lBrown transition;
+  }
 }

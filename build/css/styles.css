@@ -1,28 +1,3 @@
-#hero {
-  background: #f0f0f2
-    url(../images/coffee-mug-coffee-beans-white-background.jpg) no-repeat;
-  background-size: cover;
-}
-
-#top {
-  /* Top Section Styles */
-  margin-inline: 3%;
-  display: flex;
-  width: 94%;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  /* Unordered List Styles */
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  gap: 1vw;
-}
-
-.home-nav a,
 #hero__cta a {
   /* Link Styles */
   padding: 0.5rem;
