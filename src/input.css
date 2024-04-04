@@ -45,7 +45,10 @@
     @apply bg-contain bg-left sm:bg-cover sm:bg-center;
   }
   .main-nav-link, .footer-nav {
-    @apply text-lg lg:text-xl font-medium  px-2 py-1 md:p-2 justify-center hover:border-t-2 hover:border-l-2 hover:pt-1 focus:border-t-2 focus:border-l-2 focus:pt-1 hover:text-lBrown transition;
+    @apply text-lg lg:text-xl font-medium  px-2 py-1 md:p-2 justify-center hover:border-t-2 hover:border-l-2 hover:pt-1 active:border-t-2 active:border-l-2 active:pt-1 hover:text-lBrown transition;
+  }
+  .mobile-nav-link {
+    @apply text-lg font-semibold text-center  py-2 justify-center hover:bg-dBrown hover:text-white focus:bg-dBrown focus:text-white transition;
   }
   .btn {
     @apply max-w-24 text-center py-1 px-2 rounded-md text-white shadow-md mt-4 hover:scale-110 transition

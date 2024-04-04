@@ -70,7 +70,7 @@
         <a href="#">Cafe Treat</a>
       </h1>
       <div>
-        <button class="sm:hidden text-2xl">&#9776</button>
+        <button id="menu-open" class="sm:hidden text-2xl">&#9776</button>
 
         <nav
           class="hidden box-border sm:flex flex-row list-none gap-2 divide-x-2 divide-dBrown">
@@ -86,6 +86,18 @@
         </nav>
       </div>
     </header>
+    <nav id="mobile-nav"
+      class=" bg-white flex flex-col list-none shadow-lg divide-y-2 divide-dBrown w-1/2 ml-auto absolute z-10 top-[49px] right-0 rounded-lg">
+      <a class="border-dBrown mobile-nav-link" href="#hero">Home</a>
+
+      <a class="mobile-nav-link" href="#About-us">About</a>
+
+      <a class="mobile-nav-link" href="#menu">Menu</a>
+
+      <a class="mobile-nav-link" href="#Review">Reviews</a>
+
+      <a class="mobile-nav-link" href="#contact">Contact Us</a>
+    </nav>
 
     <main>
       <!-- Hero Section -->
