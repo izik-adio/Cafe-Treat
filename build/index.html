@@ -94,7 +94,7 @@
         class="flex-col text-left sm:min-h-screen">
 
         <h2
-          class="capitalize text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl md:mt-32 mt-8">
+          class=" md:mt-32 mt-8">
           <span
             class="text-highlight">Start</span> your day<br>with a <span
             class="text-highlight">Great</span> cup of coffee</h2>
@@ -117,137 +117,138 @@
         </p>
 
         <a href="#menu"
-          class="max-w-24 text-center bg-highlight py-1 px-2 rounded-md text-white shadow-md mt-4 hover:scale-110">Order
+          class="btn  bg-highlight">Order
           Now</a>
       </section>
 
       <!-- About Section -->
       <section id="About-us"
-        class="flex-col min-w-full sm:flex-row h-fit pb-6 items-center ">
+        class="flex-col min-w-full sm:flex-row h-fit pb-6 items-center sm:scroll-m-10 py-28 ">
         <img
           class="w-full min-h-full md:min-w-[400px] lg:min-w-[600px] sm:w-1/2"
           src="./images/about.jpg"
           alt="Cafe Treat interior" />
         <div
           class="flex flex-col gap-2 flex-wrap justify-center items-center h-full sm:w-auto">
-          <h3 class="text-2xl">About Cafe-Treat</h3>
-          <p class>
+          <h2 class="text-center">About Cafe-Treat</h2>
+          <p>
             Cafe Treat was founded in 2022 by Izik Adio, a passionate coffee
             lover with a dream of creating a cafe that would offer the best
             possible coffee experience.
           </p>
 
-          <p class>
+          <p>
             Cafe Treat's mission is to provide its customers with the highest
             quality coffee and pastries in a warm and inviting atmosphere. The
             cafe is committed to using only the freshest ingredients and to
             creating coffee drinks that are both delicious and satisfying.
           </p>
-          <a href="./pages/about.html">Learn More </a>
+          <a class="btn  bg-dBrown" href="./pages/about.html">Learn More </a>
         </div>
 
       </section>
 
       <!-- Menu Section -->
-      <section id="menu">
-        <div id="menu__first--div">
-          <div style="width: fit-content">
-            <h3 id="menu__h3">Our Menu</h3>
+      <section id="menu"
+        class="flex-col sm:scroll-m-0 py-32">
 
-            <a id="menu__more" href="/about.html">
-              See More
-              <span class="arrow">➡</span>
-            </a>
+        <h2 class>Our Menu</h2>
+
+        <div
+          class="container flex flex-col sm:flex-row justify-between max-w-screen-md gap-6 mx-auto">
+          <div
+            class="menu-divs">
+            <p
+              class="menu-items">
+              <span class="font-playFair capitalize font-semibold">Coffee</span><span
+                class="font-playFair capitalize font-semibold">price</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Espresso</span><span
+                class="item__price item__detail">$5.00</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Americano</span><span
+                class="item__price item__detail">$5.50</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Iced Coffee</span><span
+                class="item__price item__detail">$5.25</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Cappuccino</span><span
+                class="item__price item__detail">$5.25</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Flat White</span><span
+                class="item__price item__detail">$5.75</span>
+            </p>
           </div>
-          <p id="menu__p">
-            Cafe Treat's menu features a variety of coffee drinks, pastries, and
-            other food items. The coffee drinks are made with freshly-ground
-            beans and are available in a variety of flavors. The pastries are
-            made fresh daily and include a variety of sweet and savory options.
-          </p>
+
+          <div class="menu-divs">
+            <p class="menu-items">
+              <span class="font-playFair capitalize font-semibold">pastries</span><span
+                class="font-playFair capitalize font-semibold">price</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Croissant</span><span
+                class="item__price item__detail">$3.50</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Danish</span><span
+                class="item__price item__detail">$3.75</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Almond Croissants</span><span
+                class="item__price item__detail">$4.50</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Apple Turnover</span><span
+                class="item__price item__detail">$3.50</span>
+            </p>
+            <p class="menu-items">
+              <span class="item__detail item__name">Scone</span><span
+                class="item__price item__detail">$3.75</span>
+            </p>
+          </div>
         </div>
 
-        <div id="menu__second--div">
-          <p class="head">
-            <span class="head__name">Coffee</span><span class="head__name">price</span>
-          </p>
-          <p class="item" id="item-1">
-            <span class="item__detail item__name">Espresso</span><span
-              class="item__price item__detail">$5.00</span>
-            <span class="item-image" id="item-image-1"><button
-                id="item-button-1" class="item-button"></button></span>
-          </p>
-          <p class="item" id="item-2">
-            <span class="item__detail item__name">Americano</span><span
-              class="item__price item__detail">$5.50</span>
-            <span class="item-image" id="item-image-2"><button
-                id="item-button-2" class="item-button"></button></span>
-          </p>
-          <p class="item" id="item-3">
-            <span class="item__detail item__name">Iced Coffee</span><span
-              class="item__price item__detail">$5.25</span>
-            <span class="item-image" id="item-image-3"><button
-                id="item-button-3" class="item-button"></button></span>
-          </p>
-          <p class="item" id="item-4">
-            <span class="item__detail item__name">Cappuccino</span><span
-              class="item__price item__detail">$5.25</span>
-            <span class="item-image" id="item-image-4"><button
-                id="item-button-4" class="item-button"></button></span>
-          </p>
-          <p class="item" id="item-5">
-            <span class="item__detail item__name">Flat White</span><span
-              class="item__price item__detail">$5.75</span>
-            <span class="item-image" id="item-image-5"><button
-                id="item-button-5" class="item-button"></button></span>
-          </p>
-        </div>
-
-        <div id="menu__second--div">
-          <p class="head">
-            <span class="head__name">pastries</span><span class="head__name">price</span>
-          </p>
-          <p class="item" id="item-6">
-            <span class="item__detail item__name">Croissant</span><span
-              class="item__price item__detail">$3.50</span>
-            <span class="item-image" id="item-image-6"><button
-                id="item-button-6" class="item-button"></button></span>
-          </p>
-          <p class="item" id="item-7">
-            <span class="item__detail item__name">Danish</span><span
-              class="item__price item__detail">$3.75</span>
-            <span class="item-image" id="item-image-7"><button
-                id="item-button-7" class="item-button"></button></span>
-          </p>
-          <p class="item" id="item-8">
-            <span class="item__detail item__name">Almond Croissants</span><span
-              class="item__price item__detail">$4.50</span>
-            <span class="item-image" id="item-image-8"><button
-                id="item-button-8" class="item-button"></button></span>
-          </p>
-          <p class="item" id="item-9">
-            <span class="item__detail item__name">Apple Turnover</span><span
-              class="item__price item__detail">$3.50</span>
-            <span class="item-image" id="item-image-9"><button
-                id="item-button-9" class="item-button"></button></span>
-          </p>
-          <p class="item" id="item-10">
-            <span class="item__detail item__name">Scone</span><span
-              class="item__price item__detail">$3.75</span>
-            <span class="item-image" id="item-image-10"><button
-                id="item-button-10" class="item-button"></button></span>
-          </p>
-        </div>
       </section>
 
       <!-- Reviews Section-->
-      <section id="Review">
-        <h2
-          style="text-align: center; font-size: max(2vw, 1rem); margin-top: 1vh">
+      <figure
+        class="md:flex bg-dBrown rounded-xl p-8 md:p-0">
+        <img
+          class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+          src="./reviews-img/john.png" alt width="384" height="512">
+        <div
+          class="pt-6 md:p-8 text-center md:text-left space-y-4 ">
+          <blockquote>
+            <p class="text-lg font-medium text-slate-100">
+              “Tailwind CSS is the only framework that I've seen scale
+              on large teams. It’s easy to customize, adapts to any design,
+              and the build size is tiny.”
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-sky-500 dark:text-sky-400">
+              Sarah Dayan
+            </div>
+            <div class="text-slate-700 dark:text-slate-500">
+              Staff Engineer, Algolia
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+      <section id="Review" class="flex-col">
+
+        <h2 class="text-center">
           What our customers say
         </h2>
-        <div id="review">
-          <div class="reviews">
+
+        <div class="flex flex-wrap rounded-xl ">
+          <figure class="bg-dBrown ">
             <img src="./reviews-img/sarah.png" alt="Client's Image" />
             <p>
               <q>
@@ -257,7 +258,8 @@
               </q>
               <span class="names"> - Sarah J.</span>
             </p>
-          </div>
+          </figure>
+
           <div class="reviews">
             <img src="./reviews-img/john.png" alt="Client's Image" />
             <p>

@@ -31,9 +31,13 @@
   ul {
     @apply font-playFair capitalize;
   }
-  section {
-    @apply flex gap-6 min-h-96 scroll-m-20  px-4
+  h2 {
+    @apply capitalize text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl
   }
+  section {
+    @apply flex gap-6 min-h-72  scroll-m-20  px-4 align-middle mx-auto
+  }
+
 }
 @layer components {
   #hero {
@@ -42,5 +46,15 @@
   }
   .main-nav-link {
     @apply text-lg lg:text-xl font-medium  px-2 py-1 md:p-2 justify-center hover:border-t-2 hover:border-l-2 hover:pt-1 focus:border-t-2 focus:border-l-2 focus:pt-1 hover:text-lBrown transition;
+  }
+  .btn {
+    @apply max-w-24 text-center py-1 px-2 rounded-md text-white shadow-md mt-4 hover:scale-110 transition
+
+  }
+  .menu-divs {
+    @apply flex flex-col divide-y-2 divide-dBrown w-full  text-xl
+  }
+  .menu-items {
+    @apply flex flex-row flex-nowrap items-center justify-between px-4 py-2
   }
 }
