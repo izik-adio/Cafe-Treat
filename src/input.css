@@ -44,7 +44,7 @@
     background: url(../images/hero.png) no-repeat;
     @apply bg-contain bg-left sm:bg-cover sm:bg-center;
   }
-  .main-nav-link {
+  .main-nav-link, .footer-nav {
     @apply text-lg lg:text-xl font-medium  px-2 py-1 md:p-2 justify-center hover:border-t-2 hover:border-l-2 hover:pt-1 focus:border-t-2 focus:border-l-2 focus:pt-1 hover:text-lBrown transition;
   }
   .btn {
