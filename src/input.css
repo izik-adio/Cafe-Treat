@@ -60,4 +60,13 @@
   .menu-items {
     @apply flex flex-row flex-nowrap items-center justify-between px-4 py-2
   }
+  .menu-bar {
+    @apply w-5 h-1 bg-dBrown/85 rounded-xl transition duration-200
+  }
+  .menu-bar-1 {
+    @apply -rotate-45 w-6 translate-x-3 translate-y-[3px]
+  }
+  .menu-bar-2 {
+   @apply rotate-45 w-6 translate-x-3 -translate-y-[3px]
+  }
 }
