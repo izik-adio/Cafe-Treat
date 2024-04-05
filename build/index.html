@@ -60,6 +60,7 @@
     <!-- Stylesheets and Title -->
     <title>Cafe Treat - Finest Coffee and Pastries</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/menu.js" defer></script>
   </head>
 
   <body class="bg-white text-dBrown font-actor mx-auto max-w-screen-2xl">
@@ -70,7 +71,11 @@
         <a href="#">Cafe Treat</a>
       </h1>
       <div>
-        <button id="menu-open" class="sm:hidden text-2xl">&#9776</button>
+        <button id="menu-open" class="sm:hidden flex flex-col gap-[2px]">
+          <div class="w-4 h-1 bg-dBrown font-thin rounded-xl"></div>
+          <div class="w-4 h-1 bg-dBrown rounded-xl"></div>
+          <div class="w-4 h-1 bg-dBrown rounded-xl"></div>
+        </button>
 
         <nav
           class="hidden box-border sm:flex flex-row list-none gap-2 divide-x-2 divide-dBrown">
@@ -87,8 +92,8 @@
       </div>
     </header>
     <nav id="mobile-nav"
-      class=" bg-white flex flex-col list-none shadow-lg divide-y-2 divide-dBrown w-1/2 ml-auto absolute z-10 top-[49px] right-0 rounded-lg">
-      <a class="border-dBrown mobile-nav-link" href="#hero">Home</a>
+      class="hidden bg-white sm:hidden flex-col list-none shadow-lg divide-y-2 divide-dBrown w-1/2 ml-auto absolute z-10 top-12 right-0 rounded-bl-xl overflow-hidden">
+      <a class="border-dBrown mobile-nav-link pt-3" href="#hero">Home</a>
 
       <a class="mobile-nav-link" href="#About-us">About</a>
 
@@ -400,5 +405,6 @@
       </section>
 
     </footer>
+
   </body>
 </html>
