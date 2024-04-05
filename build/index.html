@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Experience the finest coffee and pastries at Cafe Treat. A cozy haven for coffee lovers, founded in 2022 by Izik Adio. Discover our menu, read customer reviews, and contact us for a delightful cafe experience." />
+      content="Experience the finest coffee and pastries at Cafe Treat. A cozy haven for coffee lovers, founded in 2022 by Izik Adio. Discover our menu, read customer reviews, and contact us for a delightful cafe experience."
+    />
     <meta
       name="keywords"
-      content="Cafe Treat, coffee, pastries, cafe, coffee lovers, best coffee, delicious pastries, cozy atmosphere, customer reviews" />
+      content="Cafe Treat, coffee, pastries, cafe, coffee lovers, best coffee, delicious pastries, cozy atmosphere, customer reviews"
+    />
     <meta name="author" content="Izik Adio" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#8e7055" />
 
     <meta
       property="og:title"
-      content="Cafe Treat - Finest Coffee and Pastries" />
+      content="Cafe Treat - Finest Coffee and Pastries"
+    />
     <meta
       property="og:description"
-      content="Indulge in the finest coffee and pastries at Cafe Treat. Founded in 2022 by Izik Adio, our cozy cafe offers a delightful atmosphere for coffee lovers. Explore our menu, read customer reviews, and contact us for an exceptional cafe experience." />
+      content="Indulge in the finest coffee and pastries at Cafe Treat. Founded in 2022 by Izik Adio, our cozy cafe offers a delightful atmosphere for coffee lovers. Explore our menu, read customer reviews, and contact us for an exceptional cafe experience."
+    />
     <meta property="og:image" content="build\images\preview-img\preview.png" />
     <meta property="og:url" content="https://cafe-treat.vercel.app/" />
     <meta property="og:type" content="website" />
@@ -27,10 +31,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Cafe Treat - Finest Coffee and Pastries" />
+      content="Cafe Treat - Finest Coffee and Pastries"
+    />
     <meta
       name="twitter:description"
-      content="Indulge in the finest coffee and pastries at Cafe Treat. Founded in 2022 by Izik Adio, our cozy cafe offers a delightful atmosphere for coffee lovers. Explore our menu, read customer reviews, and contact us for an exceptional cafe experience." />
+      content="Indulge in the finest coffee and pastries at Cafe Treat. Founded in 2022 by Izik Adio, our cozy cafe offers a delightful atmosphere for coffee lovers. Explore our menu, read customer reviews, and contact us for an exceptional cafe experience."
+    />
     <meta name="twitter:image" content="build\images\preview-img\preview.png" />
 
     <!-- Favicon -->
@@ -39,47 +45,54 @@
       rel="icon"
       href="./favicon/favicon-32x32.png"
       sizes="32x32"
-      type="image/png" />
+      type="image/png"
+    />
     <link
       rel="icon"
       href="./favicon/favicon-16x16.png"
       sizes="16x16"
-      type="image/png" />
+      type="image/png"
+    />
     <link
       rel="apple-touch-icon"
       href="./favicon/apple-touch-icon.png"
-      sizes="180x180" />
+      sizes="180x180"
+    />
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="mask-icon"
       href="./favicon/safari-pinned-tab.svg"
-      color="#5bbad5" />
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Stylesheets and Title -->
     <title>Cafe Treat - Finest Coffee and Pastries</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/menu.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
   </head>
 
   <body class="bg-white text-dBrown font-actor mx-auto max-w-screen-2xl">
     <header
-      class="flex py-2 px-4 align-middle justify-between bg-white shadow-lg sticky top-0 z-10">
+      class="flex py-2 px-4 align-middle justify-between bg-white shadow-lg sticky top-0 z-10"
+    >
       <h1
-        class="text-dBrown font-playFair font-bold text-2xl sm:3xl lg:text-4xl whitespace-nowrap hover:text-lBrown grid place-content-center">
+        class="text-dBrown font-playFair font-bold text-2xl sm:3xl lg:text-4xl whitespace-nowrap hover:text-lBrown grid place-content-center"
+      >
         <a href="#">Cafe Treat</a>
       </h1>
       <div class="flex items-center">
-        <button id="mobile-menu_btn"
-          class="sm:hidden flex flex-col">
-          <div class="menu-bar "></div>
+        <button id="mobile-menu_btn" class="sm:hidden flex flex-col">
+          <div class="menu-bar"></div>
           <div class="menu-bar mt-[2px]"></div>
-          <div class="menu-bar mt-[2px] "></div>
+          <div class="menu-bar mt-[2px]"></div>
         </button>
 
         <nav
-          class="hidden box-border sm:flex flex-row list-none gap-2 divide-x-2 divide-dBrown" aria-label="mobile">
+          class="hidden box-border sm:flex flex-row list-none gap-2 divide-x-2 divide-dBrown"
+          aria-label="mobile"
+        >
           <a class="border-dBrown main-nav-link" href="#hero">Home</a>
 
           <a class="main-nav-link" href="#About-us">About</a>
@@ -88,12 +101,14 @@
 
           <a class="main-nav-link" href="#Review">Reviews</a>
 
-          <a class="main-nav-link" href="#contact">Contact Us</a>
+          <a id="contact-btn-1" class="main-nav-link">Contact Us</a>
         </nav>
       </div>
 
-      <nav id="mobile-nav"
-        class="hidden bg-white sm:hidden flex-col list-none shadow-lg divide-y-2 divide-dBrown w-1/2 ml-auto absolute top-12 right-0 rounded-bl-xl overflow-hidden">
+      <nav
+        id="mobile-nav"
+        class="hidden bg-white sm:hidden flex-col list-none shadow-lg divide-y-2 divide-dBrown w-1/2 ml-auto absolute top-12 right-0 rounded-bl-xl overflow-hidden"
+      >
         <a class="border-dBrown mobile-nav-link pt-3" href="#hero">Home</a>
 
         <a class="mobile-nav-link" href="#About-us">About</a>
@@ -102,53 +117,59 @@
 
         <a class="mobile-nav-link" href="#Review">Reviews</a>
 
-        <a class="mobile-nav-link" href="#contact">Contact Us</a>
+        <a class="mobile-nav-link" id="contact-btn-2">Contact Us</a>
       </nav>
     </header>
 
     <main>
       <!-- Hero Section -->
-      <section
-        id="hero"
-        class="flex-col text-left sm:min-h-screen">
-
-        <h2
-          class=" md:mt-32 mt-8">
-          <span
-            class="text-highlight">Start</span> your day<br>with a <span
-            class="text-highlight">Great</span> cup of coffee</h2>
+      <section id="hero" class="flex-col text-left sm:min-h-screen">
+        <h2 class="md:mt-32 mt-8">
+          <span class="text-highlight">Start</span> your day<br />with a
+          <span class="text-highlight">Great</span> cup of coffee
+        </h2>
 
         <p
-          class="hidden sm:inline-block sm:w-1/2 md:w-2/5 mr-auto text-sm font-medium sm:text-lg md:text-xl lg:text-2xl">
+          class="hidden sm:inline-block sm:w-1/2 md:w-2/5 mr-auto text-sm font-medium sm:text-lg md:text-xl lg:text-2xl"
+        >
           Indulge in the delightful experience of savoring
-          <span class="italic text-lBrown scale-110 font-medium">freshly brewed
-            coffee</span>
+          <span class="italic text-lBrown scale-110 font-medium"
+            >freshly brewed coffee</span
+          >
           and
           <span class="italic text-lBrown scale-110 font-medium">
-            indulgent pastries</span>
-          at <span
-            class="font-semibold font-playFair text-lBrown scale-110 whitespace-nowrap">Cafe-Treat</span>
+            indulgent pastries</span
+          >
+          at
+          <span
+            class="font-semibold font-playFair text-lBrown scale-110 whitespace-nowrap"
+            >Cafe-Treat</span
+          >
         </p>
-        <p class="sm:hidden w-1/2 text-sm">Enjoy freshly brewed coffee
-          and delicious pastries at<span
-            class="font-semibold font-playFair text-lBrown scale-110 whitespace-nowrap">
-            Cafe-Treat.</span>
+        <p class="sm:hidden w-1/2 text-sm">
+          Enjoy freshly brewed coffee and delicious pastries at<span
+            class="font-semibold font-playFair text-lBrown scale-110 whitespace-nowrap"
+          >
+            Cafe-Treat.</span
+          >
         </p>
 
-        <a href="#menu"
-          class="btn  bg-highlight">Order
-          Now</a>
+        <a href="#menu" class="btn bg-highlight">Order Now</a>
       </section>
 
       <!-- About Section -->
-      <section id="About-us"
-        class="flex-col min-w-full sm:flex-row h-fit pb-6 items-center sm:scroll-m-10 py-12 sm:py-26 ">
+      <section
+        id="About-us"
+        class="flex-col min-w-full sm:flex-row h-fit pt-8 pb-12 items-center sm:scroll-m-10 sm:py-26"
+      >
         <img
           class="w-full min-h-full md:min-w-[400px] lg:min-w-[600px] sm:w-1/2"
           src="./images/about.jpg"
-          alt="Cafe Treat interior" />
+          alt="Cafe Treat interior"
+        />
         <div
-          class="flex flex-col gap-2 flex-wrap justify-center items-center h-full sm:w-auto">
+          class="flex flex-col gap-2 flex-wrap justify-center items-center h-full sm:w-auto"
+        >
           <h2 class="text-center">About Cafe-Treat</h2>
           <p>
             Cafe Treat was founded in 2022 by Izik Adio, a passionate coffee
@@ -162,120 +183,125 @@
             cafe is committed to using only the freshest ingredients and to
             creating coffee drinks that are both delicious and satisfying.
           </p>
-          <a class="btn  bg-dBrown" href="./pages/about.html">Learn More </a>
+          <a class="btn bg-dBrown" href="./pages/about.html">Learn More </a>
         </div>
-
       </section>
 
       <!-- Menu Section -->
-      <section id="menu"
-        class="flex-col scroll-m-10 sm:scroll-m-0 py-10 sm:py-14 md:py-32">
-
+      <section
+        id="menu"
+        class="flex-col scroll-m-10 sm:scroll-m-0 py-10 sm:py-14 md:py-32"
+      >
         <h2 class>Our Menu</h2>
 
         <div
-          class="container flex flex-col sm:flex-row justify-between max-w-screen-md gap-6 mx-auto">
-          <div
-            class="menu-divs">
-            <p
-              class="menu-items">
-              <span class="font-playFair capitalize font-semibold">Coffee</span><span
-                class="font-playFair capitalize font-semibold">price</span>
+          class="container flex flex-col sm:flex-row justify-between max-w-screen-md gap-6 mx-auto"
+        >
+          <div class="menu-divs">
+            <p class="menu-items">
+              <span class="font-playFair capitalize font-semibold">Coffee</span
+              ><span class="font-playFair capitalize font-semibold">price</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Espresso</span><span
-                class="item__price item__detail">$5.00</span>
+              <span class="item__detail item__name">Espresso</span
+              ><span class="item__price item__detail">$5.00</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Americano</span><span
-                class="item__price item__detail">$5.50</span>
+              <span class="item__detail item__name">Americano</span
+              ><span class="item__price item__detail">$5.50</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Iced Coffee</span><span
-                class="item__price item__detail">$5.25</span>
+              <span class="item__detail item__name">Iced Coffee</span
+              ><span class="item__price item__detail">$5.25</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Cappuccino</span><span
-                class="item__price item__detail">$5.25</span>
+              <span class="item__detail item__name">Cappuccino</span
+              ><span class="item__price item__detail">$5.25</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Flat White</span><span
-                class="item__price item__detail">$5.75</span>
+              <span class="item__detail item__name">Flat White</span
+              ><span class="item__price item__detail">$5.75</span>
             </p>
           </div>
 
           <div class="menu-divs">
             <p class="menu-items">
-              <span class="font-playFair capitalize font-semibold">pastries</span><span
-                class="font-playFair capitalize font-semibold">price</span>
+              <span class="font-playFair capitalize font-semibold"
+                >pastries</span
+              ><span class="font-playFair capitalize font-semibold">price</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Croissant</span><span
-                class="item__price item__detail">$3.50</span>
+              <span class="item__detail item__name">Croissant</span
+              ><span class="item__price item__detail">$3.50</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Danish</span><span
-                class="item__price item__detail">$3.75</span>
+              <span class="item__detail item__name">Danish</span
+              ><span class="item__price item__detail">$3.75</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Almond Croissants</span><span
-                class="item__price item__detail">$4.50</span>
+              <span class="item__detail item__name">Almond Croissants</span
+              ><span class="item__price item__detail">$4.50</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Apple Turnover</span><span
-                class="item__price item__detail">$3.50</span>
+              <span class="item__detail item__name">Apple Turnover</span
+              ><span class="item__price item__detail">$3.50</span>
             </p>
             <p class="menu-items">
-              <span class="item__detail item__name">Scone</span><span
-                class="item__price item__detail">$3.75</span>
+              <span class="item__detail item__name">Scone</span
+              ><span class="item__price item__detail">$3.75</span>
             </p>
           </div>
         </div>
-
       </section>
 
       <!-- Reviews Section-->
 
       <section id="Review" class="flex-col pb-10">
-
-        <h2 class>
-          What our customers say
-        </h2>
+        <h2 class>What our customers say</h2>
 
         <div class="flex flex-wrap gap-4 justify-center">
           <figure
-            class="hidden md:block bg-dBrown rounded-xl p-8  max-w-96 hover:scale-105 transition">
-            <img class="w-24 h-24 rounded-full mx-auto"
-              src="./reviews-img/sarah.png" alt="Sarah Image" width="384"
-              height="512" />
+            class="hidden md:block bg-dBrown rounded-xl p-8 max-w-96 hover:scale-105 transition"
+          >
+            <img
+              class="w-24 h-24 rounded-full mx-auto"
+              src="./reviews-img/sarah.png"
+              alt="Sarah Image"
+              width="384"
+              height="512"
+            />
             <div class="pt-6 text-center space-y-4">
               <blockquote>
-                <p class="text-lg font-medium text-white"> “I love the
-                  atmosphere
-                  at Cafe Treat. It's so cozy and inviting,
-                  and the staff is always friendly. The coffee is amazing, and
-                  the
-                  pastries are delicious. I highly recommend this place!”
+                <p class="text-lg font-medium text-white">
+                  “I love the atmosphere at Cafe Treat. It's so cozy and
+                  inviting, and the staff is always friendly. The coffee is
+                  amazing, and the pastries are delicious. I highly recommend
+                  this place!”
                 </p>
               </blockquote>
-              <figcaption class="font-semibold text-lBrown">Sarah J.</figcaption>
+              <figcaption class="font-semibold text-lBrown">
+                Sarah J.
+              </figcaption>
             </div>
           </figure>
 
           <figure
-            class="bg-dBrown p-8 max-w-96 rounded-xl hover:scale-105 transition">
-            <img class="w-24 h-24 rounded-full mx-auto"
+            class="bg-dBrown p-8 max-w-96 rounded-xl hover:scale-105 transition"
+          >
+            <img
+              class="w-24 h-24 rounded-full mx-auto"
               src="./reviews-img/john.png"
-              alt="John Image" width="384"
-              height="512" />
-            <div class=" pt-6 space-y-4 text-center">
+              alt="John Image"
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 space-y-4 text-center">
               <blockquote>
                 <p class="text-white text-lg font-medium">
                   “I'm a regular at Cafe Treat, and I've never been
-                  disappointed.
-                  The coffee is always fresh and delicious, and the pastries are
-                  always made with love. I highly recommend this place to anyone
-                  who loves coffee and pastries!”
+                  disappointed. The coffee is always fresh and delicious, and
+                  the pastries are always made with love. I highly recommend
+                  this place to anyone who loves coffee and pastries!”
                 </p>
               </blockquote>
               <figcaption class="text-lBrown font-semibold">John D.</figcaption>
@@ -283,18 +309,22 @@
           </figure>
 
           <figure
-            class="bg-dBrown rounded-xl p-8  max-w-96 hover:scale-105 transition">
-            <img class="w-24 h-24 rounded-full mx-auto"
-              src="./reviews-img/jane.png" alt="Jane Image" width="384"
-              height="512" />
+            class="bg-dBrown rounded-xl p-8 max-w-96 hover:scale-105 transition"
+          >
+            <img
+              class="w-24 h-24 rounded-full mx-auto"
+              src="./reviews-img/jane.png"
+              alt="Jane Image"
+              width="384"
+              height="512"
+            />
             <div class="pt-6 text-center space-y-4">
               <blockquote>
-                <p class="text-lg font-medium text-white"> “I was looking for a
-                  place to get a quick coffee before work, and
-                  I'm so glad I found Cafe Treat. The coffee was delicious and
-                  the
-                  staff was also very friendly and helpful. I will definitely be
-                  back!”
+                <p class="text-lg font-medium text-white">
+                  “I was looking for a place to get a quick coffee before work,
+                  and I'm so glad I found Cafe Treat. The coffee was delicious
+                  and the staff was also very friendly and helpful. I will
+                  definitely be back!”
                 </p>
               </blockquote>
               <figcaption class="font-semibold text-lBrown">Jane F.</figcaption>
@@ -302,92 +332,128 @@
           </figure>
 
           <figure
-            class="hidden md:block bg-dBrown rounded-xl p-8  max-w-96 hover:scale-105 transition">
-            <img class="w-24 h-24 rounded-full mx-auto"
-              src="./reviews-img/peter.png" alt="Peter Image" width="384"
-              height="512" />
+            class="hidden md:block bg-dBrown rounded-xl p-8 max-w-96 hover:scale-105 transition"
+          >
+            <img
+              class="w-24 h-24 rounded-full mx-auto"
+              src="./reviews-img/peter.png"
+              alt="Peter Image"
+              width="384"
+              height="512"
+            />
             <div class="pt-6 text-center space-y-4">
               <blockquote>
-                <p class="text-lg font-medium text-white"> “I'm so glad I found
-                  Cafe Treat! The coffee is amazing, and the
-                  pastries are even better. The atmosphere is perfect for a
-                  quick
-                  coffee break or a leisurely brunch. I highly recommend this
-                  place to anyone looking for a delicious pastry.”
+                <p class="text-lg font-medium text-white">
+                  “I'm so glad I found Cafe Treat! The coffee is amazing, and
+                  the pastries are even better. The atmosphere is perfect for a
+                  quick coffee break or a leisurely brunch. I highly recommend
+                  this place to anyone looking for a delicious pastry.”
                 </p>
               </blockquote>
-              <figcaption class="font-semibold text-lBrown">Peter G.</figcaption>
+              <figcaption class="font-semibold text-lBrown">
+                Peter G.
+              </figcaption>
             </div>
           </figure>
         </div>
       </section>
 
-      <section id="contact" class="hidden">
-        <h3>Contact Us</h3>
-        <form class="news" action="/success.html" method="post">
-          <div id="form__name">
-            <label for="name">Name: </label>
-            <input type="text" id="name" autocomplete="on" />
-          </div>
-
-          <div id="form__email">
-            <label for="email">Email: </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              autocomplete="on" />
-          </div>
-
-          <div id="form__content">
-            <label for="message">Message:</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="6"
-              required></textarea>
-          </div>
-
-          <p class="footer__p">
-            Please let us know how we can help you. We look forward to hearing
-            from you!
-          </p>
-          <div id="buttons">
-            <button class="footer__button" type="reset" value="Reset">
-              Reset
-            </button>
-            <button class="footer__button" type="submit" value="Subscribe">
-              Submit
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="hidden fixed overflow-auto place-content-center z-20 inset-0 min-h-screen bg-opacity-75 bg-dBrown"
+      >
+        <div
+          class="flex flex-col gap-4 h-fit w-full max-w-md bg-dBrown/90 text-white rounded-lg shadow-xl overflow-hidden"
+        >
+          <div
+            class="w-full flex flex-row justify-between items-center bg-white text-dBrown px-4 py-2"
+          >
+            <h2>Contact Us</h2>
+            <button id="close-contact" class="text-3xl font-semibold">
+              &times;
             </button>
           </div>
-          <p class="footer__p">
-            Thank you for reaching out to us. Your feedback and inquiries are
-            always welcome. We look forward to connecting with you soon.
-          </p>
-        </form>
+          <form class="px-4 py-2">
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-bold mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline text-dBrown"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-bold mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline text-dBrown"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-bold mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full shadow appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline text-dBrown"
+                required
+              ></textarea>
+            </div>
 
+            <div class="flex flex-flow justify-around">
+              <button
+                class="text-md text-white bg-orange-600 h-8 w-20 font-medium shadow-xl rounded-md hover:bg-white hover:text-orange-600 transition"
+                type="reset"
+                value="Reset"
+              >
+                Reset
+              </button>
+              <button
+                class="text-md text-white bg-highlight h-8 w-20 font-medium shadow-xl rounded-md hover:bg-white hover:text-highlight transition"
+                type="submit"
+                value="Subscribe"
+              >
+                Submit
+              </button>
+            </div>
+            <p class="text-center text-lg font-playFair py-4">
+              Please let us know how we can help you. We look forward to hearing
+              from you!
+            </p>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer class=" bg-dBrown">
+    <footer class="bg-dBrown">
       <section class="flex-col p-4 text-white max-w-screen-sm">
         <h2 class="text-center p-4 text-lBrown">Cafe Treat</h2>
 
         <div class="flex flex-col sm:flex-row gap-10 sm:justify-between">
-
           <div
-            class="text-center my-auto w-5/6 mx-auto sm:mx-0 sm:w-1/2  space-y-4 text-xl">
+            class="text-center my-auto w-5/6 mx-auto sm:mx-0 sm:w-1/2 space-y-4 text-xl"
+          >
             <p>
-              Cafe Treat is open from <em>7am to 7pm</em>, seven days a
-              week.
+              Cafe Treat is open from <em>7am to 7pm</em>, seven days a week.
             </p>
             <p>☎ (1234) 567-8910.</p>
           </div>
 
           <div
-            class="flex gap-8 mx-auto sm:justify-between text-xl text-center px-4">
+            class="flex gap-8 mx-auto sm:justify-between text-xl text-center px-4"
+          >
             <ul class="font-normal font-actor gap-2">
               <li class="footer-nav"><a href="#About-us">About</a></li>
               <li class="footer-nav"><a href="#menu">Menu</a></li>
@@ -402,11 +468,10 @@
         </div>
 
         <hr class="w-3/4 mx-auto" />
-        <p class="text-lg text-center py-4">&copy; 2024 Cafe Treat. All rights
-          reserved.</p>
+        <p class="text-lg text-center py-4">
+          &copy; 2024 Cafe Treat. All rights reserved.
+        </p>
       </section>
-
     </footer>
-
   </body>
 </html>
